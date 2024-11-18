@@ -15,7 +15,6 @@ const TimelineEvent = styled.li(props => css`
   align-items: flex-start;
   @media (min-width: ${props => props.theme.breakpoints.mobile}) {
     align-items: ${props => props.$index & 1 ? 'flex-end' : 'flex-start'};
-    text-align: ${props => props.$index & 1 ? 'right' : 'left'};
   }
   margin: 0;
   padding: 0;
@@ -67,6 +66,7 @@ const EventTitle = styled.span(props => css`
   width: 100%;
   @media (min-width: ${props => props.theme.breakpoints.mobile}) {
     margin-left: 0;
+    padding-left: ${props => props.$index & 1 ? '1rem' : 0};
     width: 50%;
   }
   @media (max-width: ${props => props.theme.breakpoints.mobile}) {
@@ -117,7 +117,7 @@ export const Timeline = props => {
     {
       props.events.map((event, index) => (
       <TimelineEvent $index={index} key={`event-${index}`}>
-        <EventTitle>{ event.event }</EventTitle>
+        <EventTitle $index={index}>{ event.event }</EventTitle>
         <EventDescription $index={index}>
           { event.description }
         </EventDescription>
