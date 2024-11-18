@@ -26,4 +26,13 @@ const Paragraph = styled.p(props => css`
   margin: 0;
 `)
 
-export { HeadingXL, HeadingL, Paragraph }
+const ScreenReaderOnly = styled.p(props => css`
+  position:absolute;  
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;  
+`)
+
+export { HeadingXL, HeadingL, Paragraph, ScreenReaderOnly }

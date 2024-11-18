@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ContentContainer, Cluster, Main, Header, Nav, Stack } from './components/Layout'
 import { HeadingXL, HeadingL, Paragraph } from './components/Typography'
 import { Button } from './components/Button'
@@ -12,7 +12,12 @@ import { career } from './careerOverview.json'
 import { Timeline } from './components/Timeline'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [earliest, setEarliest] = useState('')
+  const [now, setNow] = useState('')
+  useEffect(() => {
+    setNow(new Date().getFullYear())
+    setEarliest(Math.min(...career.map(event => event.year)).toString())
+  }, [])
   return (
     <ThemeProvider theme={theme.dark}>
       <GlobalStyle />
@@ -20,13 +25,13 @@ function App() {
         <Header>
           <HeadingXL as='h1'>James Medd</HeadingXL>
           <Nav>
-            <Button>Career</Button>
-            <Button>Projects</Button>
-            <Button>Contact</Button>
+            <Button as='a' href='#career'>Career</Button>
+            <Button as='a' href='#projects'>Projects</Button>
+            <Button as='a' href='#contact'>Contact</Button>
           </Nav>
         </Header>
         <Main>
-          <Cluster $justify="center" $gap='1.5rem'>
+          <Cluster $justify='center' $gap='1.5rem'>
             <ProfileImage alt="A black and white picture of James Medd, smiling with his moustache." />
             <Stack $alignMobile="center">
               <HeadingL as='h2'>
@@ -41,10 +46,18 @@ function App() {
             </Stack>
           </Cluster>
           <Wiggle />
-          <HeadingL as='h2'>
+          <Stack $alignMobile='center' $gap='1.5rem'>
+          <HeadingL id="career" as='h2'>
             Career overview
           </HeadingL>
-          <Timeline events={career} />
+          <Timeline earliest={earliest} now={now} events={career} />
+          </Stack>
+          <Wiggle />
+          <Stack $alignMobile='center' $gap='1.5rem'>
+            <HeadingL id='projects' as='h2'>
+              Selected projects
+            </HeadingL>
+          </Stack>
         </Main>
       </ContentContainer>
     </ThemeProvider>

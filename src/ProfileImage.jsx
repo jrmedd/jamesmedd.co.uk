@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
-import profilePicJpg from '../public/headshotbw.jpg'
-import profilePicWebp from '../public/headshotbw.webp'
+import profilePicJpg from '/headshotbw.jpg?url'
+import profilePicWebp from '/headshotbw.webp?url'
 
 const CircularImage = styled.picture(props => css`
  & img {
