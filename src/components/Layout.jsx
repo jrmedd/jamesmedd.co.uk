@@ -43,6 +43,7 @@ const Nav = styled.nav(props => css`
 const Cluster = styled.div(props => css`
   display: flex;
   flex-flow: row wrap;
+  max-width: 100%;
   justify-content: ${props => props.$justify ? props.$justify : 'unset'};
   gap: ${props => props.$gap ?? '1rem'};
 `)
@@ -50,6 +51,7 @@ const Cluster = styled.div(props => css`
 const Stack = styled.div(props => css`
   display: flex;
   flex-flow: column;
+  max-width: 100%;
   gap: 1rem;
   flex-grow: 1;
   @media (max-width: ${props => props.theme.breakpoints.mobile}) {
