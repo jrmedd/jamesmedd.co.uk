@@ -8,9 +8,11 @@ import { ProfileImage } from './ProfileImage'
 import { Wiggle } from './components/Wiggle'
 import { TimeOfDayGreeting } from './components/TimeOfDayGreeting'
 
+import { career } from './careerOverview.json'
+import { Timeline } from './components/Timeline'
+
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <ThemeProvider theme={theme.dark}>
       <GlobalStyle />
@@ -39,6 +41,7 @@ function App() {
             </Stack>
           </Cluster>
           <Wiggle />
+          <Timeline events={career} />
         </Main>
       </ContentContainer>
     </ThemeProvider>

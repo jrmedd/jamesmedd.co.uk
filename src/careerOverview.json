@@ -1,0 +1,49 @@
+{
+  "career": [
+    {
+      "year": 2010,
+      "event": "University of Hull",
+      "description": "My multi-disciplinary BA allowed me to craft digital experiences, so I created an interactive installation for York Museums Trust in my final year."
+    },
+    {
+      "year": 2012,
+      "event": "University of Salford",
+      "description": "For my MA in art & design, creative technology was my focus. I became more in-tune with media theory, experimented with software, ran workshops, and joined the North West’s creative community."
+    },
+    {
+      "year": 2013,
+      "event": "Manchester Digital Laboratory (MadLab)",
+      "description": "At this scrappy, grassroots CIC, I did everything from formulating Arduino and web development workshops to helping with funding bids, and even cleaning the loos."
+    },
+    {
+      "year": 2014,
+      "event": "SimpleUsability",
+      "description": "As head of technical innovation, I was part of a huge research effort to overhaul accessibility for ASDA. I designed and developed a suite of software to facilitate better usability research for Virgin, EE, and M&S."
+    },
+    {
+      "year": 2016,
+      "event": "Awkward Arcade (resident at MadLab)",
+      "description": "MadLab’s Arts+Tech programme was a 'now or never' moment to realise my own dream project. The Awkward Arcade brought indie games to new audiences, popping up in museums, art galleries, and nightclubs. I also devised and ran a series of game design workshops across Greater Manchester, helping to earn 'Best Tech For Good Project' at the Big Chip Awards 2017."
+    },
+    {
+      "year": 2017,
+      "event": "The Landing",
+      "description": "As a design and technology consultant in an innovation lab, I provided emerging technology support to start-ups and large enterprises alike. Highlights include working with a cancer patient to prototype a therapeutic exercise app and IoT device, as well as designing the world’s first 3D-printed surgical support for ankylosing spondylitis patients with the NHS."
+    },
+    {
+      "year": 2018,
+      "event": "Blue Prism",
+      "description": "As a senior interaction designer at Blue Prism, I helped turn the world’s most powerful robotic process automation software into something more human-friendly. I was a key architect of the in-house design system and front-end component library, which has proven to be an essential tool for bringing a decades-old, desktop-oriented software company into the world of the web."
+    },
+    {
+      "year": 2021,
+      "event": "Kerv Digital",
+      "description": "As a senior UX consultant, I imagined the future of joined-up digital experiences for public and third sector clients, including the British Red Cross, Driver and Vehicle Standards Agency (DVSA), and The Scouts Association. Overhauling the DVSA’s commercial vehicle service meant rethinking several decades of complex civil service processes to adhere to the GOV.UK Service Standard."
+    },
+    {
+      "year": 2022,
+      "event": "SPARCK",
+      "description": "At SPARCK, I leverage my broad experience as a digital design consultant, creating usable, accessible services through a combination of extensive service design, detailed interaction design, and empathetic research. I'm also responsible for coaching our leads in the North of England and ensuring our strategy makes SPARCK a great place to work."
+    }
+  ]
+}
