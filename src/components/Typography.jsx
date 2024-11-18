@@ -14,6 +14,10 @@ const HeadingXL = styled(Heading)`
 const HeadingL = styled(Heading)`
   font-size: 1.5rem;
 `
+const Link = styled.a(props => css`
+  color: ${props => props.theme.interactive};
+  text-decoration-style: wavy;
+`)
 
 const Paragraph = styled.p(props => css`
   font-family: 'Inconsolata';
@@ -35,4 +39,4 @@ const ScreenReaderOnly = styled.p(props => css`
   overflow:hidden;  
 `)
 
-export { HeadingXL, HeadingL, Paragraph, ScreenReaderOnly }
+export { HeadingXL, HeadingL, Paragraph, Link, ScreenReaderOnly }

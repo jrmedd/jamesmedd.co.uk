@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ContentContainer, Cluster, Main, Header, Nav, Stack } from './components/Layout'
-import { HeadingXL, HeadingL, Paragraph } from './components/Typography'
+import { HeadingXL, HeadingL, Link, Paragraph } from './components/Typography'
 import { Button } from './components/Button'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyle, theme } from './theme'
@@ -10,6 +10,7 @@ import { TimeOfDayGreeting } from './components/TimeOfDayGreeting'
 
 import { career } from './careerOverview.json'
 import { Timeline } from './components/Timeline'
+import { ChatBubble } from './components/ChatBubble'
 
 function App() {
   const [earliest, setEarliest] = useState('')
@@ -57,6 +58,19 @@ function App() {
             <HeadingL id='projects' as='h2'>
               Selected projects
             </HeadingL>
+            <Wiggle />
+          </Stack>
+          <Stack $alignMobile='center' $gap='1.5rem'>
+            <HeadingL id='contact' as='h2'>
+              Contact me
+            </HeadingL>
+            <Cluster $justify='center' $gap='1.5rem'>
+              <ChatBubble size='8.5rem' />
+              <Paragraph>
+                If you'd like to discuss working together, I'd suggest you <Link href="mailto:hello@jamesmedd.co.uk?subject=Hi%20James">send me an email</Link> otherwise you'll find me in various places:
+              </Paragraph>
+            </Cluster>
+            <Wiggle />
           </Stack>
         </Main>
       </ContentContainer>
