@@ -57,6 +57,8 @@ const TimelineEvent = styled.li(props => css`
     height: 1rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
+    box-shadow: 0px 0px 0px 4px ${props => props.theme.background};
+    z-index: 999;
     background-color: ${props => props.theme.interactive};
   }
 `)

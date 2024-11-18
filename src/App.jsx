@@ -41,6 +41,9 @@ function App() {
             </Stack>
           </Cluster>
           <Wiggle />
+          <HeadingL as='h2'>
+            Career overview
+          </HeadingL>
           <Timeline events={career} />
         </Main>
       </ContentContainer>
