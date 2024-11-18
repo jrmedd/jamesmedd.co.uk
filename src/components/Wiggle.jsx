@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 
 const StyledSVG = styled.svg(props => css`
   path {
+    fill: none;
     stroke: ${props => props.theme.interactive};
   }
 `)
