@@ -4,14 +4,16 @@ import { HeadingXL, HeadingL, Link, Paragraph } from './components/Typography'
 import { Button } from './components/Button'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyle, theme } from './theme'
-import { ProfileImage } from './ProfileImage'
+import { ProfileImage } from './components/ProfileImage'
 import { Wiggle } from './components/Wiggle'
 import { TimeOfDayGreeting } from './components/TimeOfDayGreeting'
-
-import { career } from './careerOverview.json'
 import { Timeline } from './components/Timeline'
 import { ChatBubble } from './components/ChatBubble'
 import { Socials } from './components/Socials'
+
+import { career } from './careerOverview.json'
+import { projects } from './projects.json'
+import { CircularImage } from './components/CircularImage'
 
 function App() {
   const [earliest, setEarliest] = useState('')
@@ -59,6 +61,21 @@ function App() {
             <HeadingL id='projects' as='h2'>
               Selected projects
             </HeadingL>
+            { projects.map((project, index) => (
+              
+                <Cluster $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>
+                  <CircularImage size='8.5rem' src={ project.image } alt={ project.imageAlt } />
+                  <Stack>
+                    <HeadingL as='h3'>
+                      { project.title }
+                    </HeadingL>
+                    <Paragraph>
+                      { project.description }
+                    </Paragraph>
+                  </Stack>
+                </Cluster>
+              
+            )) }
             <Wiggle />
           </Stack>
           <Stack $alignMobile='center' $gap='1.5rem'>

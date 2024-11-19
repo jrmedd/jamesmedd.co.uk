@@ -42,7 +42,7 @@ const Nav = styled.nav(props => css`
 
 const Cluster = styled.div(props => css`
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: ${props.$reverse ? 'row-reverse' : 'row'} wrap;
   max-width: 100%;
   justify-content: ${props => props.$justify ? props.$justify : 'unset'};
   align-items: ${props => props.$align ? props.$align : 'unset'};
