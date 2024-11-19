@@ -11,6 +11,7 @@ import { TimeOfDayGreeting } from './components/TimeOfDayGreeting'
 import { career } from './careerOverview.json'
 import { Timeline } from './components/Timeline'
 import { ChatBubble } from './components/ChatBubble'
+import { Socials } from './components/Socials'
 
 function App() {
   const [earliest, setEarliest] = useState('')
@@ -61,15 +62,18 @@ function App() {
             <Wiggle />
           </Stack>
           <Stack $alignMobile='center' $gap='1.5rem'>
-            <HeadingL id='contact' as='h2'>
-              Contact me
-            </HeadingL>
-            <Cluster $justify='center' $gap='1.5rem'>
-              <ChatBubble size='8.5rem' />
-              <Paragraph>
-                If you'd like to discuss working together, I'd suggest you <Link href="mailto:hello@jamesmedd.co.uk?subject=Hi%20James">send me an email</Link> otherwise you'll find me in various places:
-              </Paragraph>
+            <Cluster $justify='center' $align='center' $gap='1.5rem'>
+              <ChatBubble size='6rem' />
+              <Stack $alignMobile='center' $gap='1.5rem'>
+                <HeadingL id='contact' as='h2'>
+                  Contact me
+                </HeadingL>
+                <Paragraph>
+                  If you'd like to discuss working together, I'd suggest you <Link href="mailto:hello@jamesmedd.co.uk?subject=Hi%20James">send me an email</Link> otherwise you'll find me in various places:
+                </Paragraph>
+              </Stack>
             </Cluster>
+            <Socials />
             <Wiggle />
           </Stack>
         </Main>

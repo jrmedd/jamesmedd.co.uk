@@ -45,6 +45,7 @@ const Cluster = styled.div(props => css`
   flex-flow: row wrap;
   max-width: 100%;
   justify-content: ${props => props.$justify ? props.$justify : 'unset'};
+  align-items: ${props => props.$align ? props.$align : 'unset'};
   gap: ${props => props.$gap ?? '1rem'};
 `)
 
