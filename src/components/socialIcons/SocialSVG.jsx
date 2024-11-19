@@ -1,8 +1,9 @@
 import styled, { css } from 'styled-components'
 
 const StyledSVG = styled.svg(props => css`
-  width: ${props.$width ?? 'unset'};
-  height: ${props.$height ?? 'unset'};
+  display: inline-block;
+  width: ${props.$size ?? 'unset'};
+  height: ${props.$size ?? 'unset'};
   transition: all .3s ease;
   path {
     fill: ${props => props.theme.interactive};
@@ -11,13 +12,17 @@ const StyledSVG = styled.svg(props => css`
 
 const StyledLink = styled.a(props => css`
   text-decoration: none;
+  width: ${props.$size};
+  outline: none;
   &:focus {
-    outline: 2px solid ${props => props.theme.interactive}; 
-    border-radius: 2%;
+    svg {
+      border: 2px solid ${props => props.theme.interactive}; 
+      border-radius: 2px;
+    }
   }
   &:focus, &:hover {
     svg {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
     path {
     stroke-width: 2;
@@ -28,8 +33,8 @@ const StyledLink = styled.a(props => css`
 `)
 
 export const SocialSVG = props => (
-  <StyledLink aria-label={props.label} href={props.href}>
-    <StyledSVG viewBox="0 0 56 56" $width={props.width} $height={props.height}>
+  <StyledLink $size={props.size} aria-label={props.label} href={props.href}>
+    <StyledSVG viewBox="0 0 56 56" $size={props.size}>
       { props.children }
     </StyledSVG>
   </StyledLink>

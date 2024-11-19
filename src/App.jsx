@@ -92,7 +92,6 @@ function App() {
               </Stack>
             </Cluster>
             <Socials />
-            <Wiggle />
           </Stack>
         </Main>
       </ContentContainer>
