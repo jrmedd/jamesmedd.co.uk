@@ -24,8 +24,8 @@ export const CircularImage = props => {
 
   return (
     <StyledPicture $size={props.size}>
-      <source srcSet={`/public/${fileBase}.webp`} type="image/webp" />
-      <StyledImg src={`/public/${fileBase}.jpg`} alt={props.alt} />
+      <source srcSet={`/${fileBase}.webp`} type="image/webp" />
+      <StyledImg src={`/${fileBase}.jpg`} alt={props.alt} />
     </StyledPicture>
   );
 };

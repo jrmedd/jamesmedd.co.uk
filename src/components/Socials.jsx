@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components'
-import { LinkedIn } from './LinkedIn'
-import { NPM } from './NPM'
-import { Instagram } from './Instagram'
-import { GitHub } from './GitHub'
-import { YouTube } from './YouTube'
+import { LinkedIn } from './socialIcons/LinkedIn'
+import { NPM } from './socialIcons/NPM'
+import { Instagram } from './socialIcons/Instagram'
+import { GitHub } from './socialIcons/GitHub'
+import { YouTube } from './socialIcons/YouTube'
 
 const FlexList = styled.ul(props => css`
   display: flex;

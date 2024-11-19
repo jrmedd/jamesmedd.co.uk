@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ContentContainer, Cluster, Main, Header, Nav, Stack } from './components/Layout'
-import { HeadingXL, HeadingL, Link, Paragraph } from './components/Typography'
+import { HeadingXL, HeadingL, HeadingM, Link, Paragraph, ScreenReaderOnly } from './components/Typography'
 import { Button } from './components/Button'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyle, theme } from './theme'
@@ -57,27 +57,28 @@ function App() {
           <Timeline earliest={earliest} now={now} events={career} />
           </Stack>
           <Wiggle />
-          <Stack $alignMobile='center' $gap='1.5rem'>
+          <Stack $alignMobile='center' $gap='3.5rem'>
             <HeadingL id='projects' as='h2'>
               Selected projects
             </HeadingL>
-            { projects.map((project, index) => (
-              
+            { projects.map((project, index) => (              
                 <Cluster $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>
                   <CircularImage size='8.5rem' src={ project.image } alt={ project.imageAlt } />
-                  <Stack>
-                    <HeadingL as='h3'>
+                  <Stack $alignMobile='center'>
+                    <HeadingM as='h3'>
                       { project.title }
-                    </HeadingL>
+                    </HeadingM>
                     <Paragraph>
-                      { project.description }
+                      { project.description } <Link href={project.link}>Read more<ScreenReaderOnly> about { project.tile }</ScreenReaderOnly></Link>
+
+                    </Paragraph>
+                    <Paragraph>
                     </Paragraph>
                   </Stack>
                 </Cluster>
-              
             )) }
+            </Stack>
             <Wiggle />
-          </Stack>
           <Stack $alignMobile='center' $gap='1.5rem'>
             <Cluster $justify='center' $align='center' $gap='1.5rem'>
               <ChatBubble size='6rem' />
