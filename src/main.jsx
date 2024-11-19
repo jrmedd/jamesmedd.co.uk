@@ -1,9 +1,29 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { PageTemplate } from './PageTemplate.jsx'
+import { Home } from './pages/Home.jsx'
+import { Bloomtown } from './pages/Bloomtown.jsx'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    Component: PageTemplate,
+    children: [
+      {
+        index: true,
+        Component: Home
+      },
+      {
+        path: 'bloomtown',
+        Component: Bloomtown
+      }
+    ]
+  }
+])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 )

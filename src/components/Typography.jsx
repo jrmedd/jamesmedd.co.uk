@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { Link as RRLink } from 'react-router-dom'
 
 const Heading = styled.h1(props => css`
   font-family : 'Edu NSW ACT Foundation', cursive;
@@ -17,7 +18,7 @@ const HeadingL = styled(Heading)`
 const HeadingM = styled(Heading)`
   font-size: 1.25rem;
 `
-const Link = styled.a(props => css`
+const Link = styled(RRLink)(props => css`
   color: ${props => props.theme.interactive};
   text-decoration-style: wavy;
 `)

@@ -10,7 +10,7 @@ const FlexList = styled.ul(props => css`
   width: 100%;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;

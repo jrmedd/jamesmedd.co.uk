@@ -14,8 +14,8 @@ const ThenAndNow = styled.span(props => css`
   @media (min-width: ${props => props.theme.breakpoints.mobile}) {
     position: absolute;
     text-align: center;
-    top: ${props => props.$then ? '-5rem' : 'unset'};
-    bottom: ${props => props.$now ? '5rem' : 'unset'}; 
+    top: ${props => props.$then ? '-4.5rem' : 'unset'};
+    bottom: ${props => props.$now ? '4.5rem' : 'unset'}; 
     left: 0;
     width: 100%;
   }
@@ -36,7 +36,7 @@ const TimelineList = styled.ol(props => css`
   &:before {
     content: '';
     position: absolute;
-    top: -4rem;
+    top: -3.5rem;
     @media (max-width: ${props => props.theme.breakpoints.mobile}) {
       right: unset;
       left: 0;
@@ -100,7 +100,7 @@ const TimelineEvent = styled.li(props => css`
     content: '';
     border: 0;
     position: absolute;
-    bottom: -4rem;
+    bottom: -3.5rem;
     @media (max-width: ${props => props.theme.breakpoints.mobile}) {
       right: unset;
       left: 0;

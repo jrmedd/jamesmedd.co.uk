@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
+import { Link } from 'react-router-dom'
 
-const Button = styled.button(props => css`
+const Button = styled(Link)(props => css`
   border: none;
   font-size: 1rem;
   line-height: 1rem;
