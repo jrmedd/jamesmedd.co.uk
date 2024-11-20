@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         loader: projectLoader,
-        path: ':projectName',
+        path: ':project',
         Component: Project
       }
     ]
