@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Link as RRLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Heading = styled.h1(props => css`
   font-family : 'Edu NSW ACT Foundation', cursive;
@@ -22,11 +22,23 @@ const HeadingL = styled(Heading)`
 const HeadingM = styled(Heading)`
   font-size: 1.25rem;
 `
-const Link = styled(RRLink)(props => css`
+
+const ExternalLink = styled.a(props => css`
   color: ${props => props.theme.interactive};
   text-decoration-style: wavy;
   &:focus {
     outline: 2px solid ${props => props.theme.interactive};
+  }
+`)
+
+const InternalLink = styled(Link)(props => css`
+  color: ${props => props.theme.interactive};
+  text-decoration-style: wavy;
+  &:focus {
+    outline: 2px solid ${props => props.theme.interactive};
+  }
+  &:visited {
+    color:${props => props.theme.interactive}
   }
 `)
 
@@ -35,7 +47,7 @@ const Paragraph = styled.p(props => css`
   font-weight: 350;
   color: ${props => props.theme.text.body};
   line-height: 125%;
-  width: 28rem;
+  width: ${props => props.$width ?? '70ch'};
   max-width: 100%;
   flex-grow: 1;
   margin: 0;
@@ -50,4 +62,4 @@ const ScreenReaderOnly = styled.span(props => css`
   overflow:hidden;  
 `)
 
-export { HeadingXL, HeadingL, HeadingM, Paragraph, Link, ScreenReaderOnly }
+export { ExternalLink, HeadingXL, HeadingL, HeadingM, InternalLink, Paragraph, ScreenReaderOnly }

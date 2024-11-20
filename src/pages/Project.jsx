@@ -1,5 +1,7 @@
 import { useLoaderData } from "react-router-dom";
-import { HeadingL, Paragraph } from "../components/Typography";
+import { RectangularImage } from "../components/RectangularImage";
+import { Wiggle } from "../components/Wiggle"
+import { ExternalLink, HeadingL, HeadingM, Paragraph } from "../components/Typography"
 import Markdown from "react-markdown";
 
 export const Project = () => {
@@ -11,7 +13,11 @@ export const Project = () => {
   </HeadingL>
   <Markdown components={
     {
+      a: ExternalLink,
       h2: HeadingL,
+      h3: HeadingM,
+      hr: Wiggle,
+      img: RectangularImage,
       p: Paragraph
     }
   }>

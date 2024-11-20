@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
 
 import { Stack } from "../components/Layout"
-import { HeadingL } from "../components/Typography"
+import { HeadingL, Paragraph } from "../components/Typography"
 import { Timeline } from "../components/Timeline"
 import { useLoaderData } from "react-router-dom"
+import { Wiggle } from "../components/Wiggle"
 
 export const Career = props => {
   const { career } = useLoaderData()
@@ -15,8 +16,16 @@ export const Career = props => {
   }, [])
   return (
   <Stack $alignMobile='center' $gap='1.5rem'>
-    <HeadingL id="career" as='h2'>
-      Career overview
+    <HeadingL id='career' as='h1'>
+      Career
+    </HeadingL>
+    <Paragraph>
+      My career has been a squiggly one, ranging from museum installation work through to design consultancy.
+      In that time I've gained a diverse set of creative skills:
+    </Paragraph>
+    <Wiggle />
+    <HeadingL as='h2'>
+      Experience timeline
     </HeadingL>
     <Timeline earliest={earliest} now={now} events={career} />
   </Stack>

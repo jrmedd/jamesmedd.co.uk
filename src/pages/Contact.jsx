@@ -1,6 +1,6 @@
 import { Cluster, Stack } from "../components/Layout"
 import { ChatBubble } from "../components/ChatBubble"
-import { HeadingL, Paragraph, Link } from "../components/Typography"
+import { ExternalLink, HeadingL, Paragraph } from "../components/Typography"
 import { Socials } from "../components/Socials"
 export const Contact = () => (
   <Stack $alignMobile='center' $gap='1.5rem'>
@@ -11,7 +11,7 @@ export const Contact = () => (
           Contact me
         </HeadingL>
         <Paragraph>
-          If you'd like to discuss working together, I'd suggest you <Link to="mailto:hello@jamesmedd.co.uk?subject=Hi%20James">send me an email</Link> otherwise you'll find me in various places:
+          If you'd like to discuss working together, I'd suggest you <ExternalLink href="mailto:hello@jamesmedd.co.uk?subject=Hi%20James">send me an email</ExternalLink> otherwise you'll find me in various places:
         </Paragraph>
       </Stack>
     </Cluster>

@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom"
 
 import { Cluster, Stack } from "../components/Layout"
-import { HeadingL, HeadingM, Link, Paragraph, ScreenReaderOnly } from "../components/Typography"
+import { HeadingL, HeadingM, InternalLink, Paragraph, ScreenReaderOnly } from "../components/Typography"
 import { CircularImage } from "../components/CircularImage"
 
 export const Projects = props => {
@@ -18,8 +18,8 @@ export const Projects = props => {
           <HeadingM as='h2'>
             { project.title }
           </HeadingM>
-          <Paragraph>
-            { project.description } <Link to={`${project.link}`}>Read more<ScreenReaderOnly> about { project.tile }</ScreenReaderOnly></Link>
+          <Paragraph $width='30rem'>
+            { project.description } <InternalLink to={`${project.link}`}>Read more<ScreenReaderOnly> about { project.tile }</ScreenReaderOnly></InternalLink>
           </Paragraph>
         </Stack>
     </Cluster>
