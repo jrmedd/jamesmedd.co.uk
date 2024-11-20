@@ -53,9 +53,11 @@ const Stack = styled.div(props => css`
   display: flex;
   flex-flow: column;
   max-width: 100%;
+  width: ${props => props.$width ?? 'unset'};
   gap: ${props => props.$gap ?? '1rem'};
   flex-grow: 1;
   @media (max-width: ${props => props.theme.breakpoints.mobile}) {
+    width: 100%;
     align-items: ${props => props.$alignMobile ? props.$alignMobile : props.$align ?? 'unset'};
   }
 `)

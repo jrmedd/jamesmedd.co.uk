@@ -11,7 +11,10 @@ const markdownFiles = import.meta.glob('/src/content/*.md', { query: '?raw', imp
 
 export const careerLoader = () => ({career})
 
-export const projectsLoader = () => ({projects})
+export const projectsLoader = () => {
+  const tags = [...new Set(projects.flatMap(obj => obj.tags))].sort()
+  return ({tags, projects})
+}
 
 export const projectLoader = async ({params}) => {
   const loader = markdownFiles[`/src/content/${params.project}.md`]
