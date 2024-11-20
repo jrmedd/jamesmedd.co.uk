@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Bloomtown Haiku",
-      "description": "A public installation, celebrating springtime and poetry, for the National Trust's blossom festival: Bloomtown.",
+      "description": "A  web app public installation, celebrating springtime and poetry, for the National Trust's blossom festival: Bloomtown.",
       "image": "bloomtown.jpg",
       "imageAlt": "The Bloomtown Haiku board in Sadler's Yard in Manchester, the haiku reads: 'To open my mind, To thoughts of glowing sunshine, I must beam within.",
       "link": "bloomtown"

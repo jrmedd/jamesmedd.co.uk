@@ -7,10 +7,10 @@ export const Contact = () => (
     <Cluster $justify='center' $align='center' $gap='1.5rem'>
       <ChatBubble size='6rem' />
       <Stack $alignMobile='center' $gap='1.5rem'>
-        <HeadingL id='contact' as='h2'>
+        <HeadingL id='contact' as='h1'>
           Contact me
         </HeadingL>
-        <Paragraph>
+        <Paragraph $width='28rem'>
           If you'd like to discuss working together, I'd suggest you <ExternalLink href="mailto:hello@jamesmedd.co.uk?subject=Hi%20James">send me an email</ExternalLink> otherwise you'll find me in various places:
         </Paragraph>
       </Stack>

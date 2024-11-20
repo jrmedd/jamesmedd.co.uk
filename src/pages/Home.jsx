@@ -9,19 +9,23 @@ import { Noma } from '../components/logos/Noma'
 import { DESNZ } from '../components/logos/DESNZ'
 import { DVSA } from '../components/logos/DVSA'
 import { Scouts } from '../components/logos/Scouts'
+import { BA } from '../components/logos/BA'
+import { BluePrism } from '../components/logos/BluePrism'
 
 export const Home = () => (
   <>
     <IntroSpiel />
     <Wiggle />
     <Paragraph>
-      I design and sometimes build usable and often joyful experiences for organisations such as:
+      I design and sometimes build usable and joyful digital experiences for organisations such as:
     </Paragraph>
     <Cluster $gap= '2rem' $justify='center' $alignMobile='center'>
       <FutureEverything />
       <NationalTrust />
       <Noma />
+      <BA />
       <Scouts />
+      <BluePrism />
       <DVSA />
       <DESNZ />
     </Cluster>

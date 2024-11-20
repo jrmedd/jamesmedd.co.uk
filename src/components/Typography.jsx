@@ -51,6 +51,7 @@ const Paragraph = styled.p(props => css`
   max-width: 100%;
   flex-grow: 1;
   margin: 0;
+  text-wrap: pretty;
 `)
 
 const ScreenReaderOnly = styled.span(props => css`

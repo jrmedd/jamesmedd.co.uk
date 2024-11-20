@@ -2,8 +2,9 @@ import styled, { css } from 'styled-components'
 
 export const LogoWrapper = styled.svg(props => css`
   display: block;
-  height: 3.5rem;
+  height: 2.5rem;
+  width: 33%; 
   path {
     fill: ${props => props.theme.interactive};
-  }
+  } 
 `)
