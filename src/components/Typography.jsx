@@ -4,8 +4,12 @@ import { Link as RRLink } from 'react-router-dom'
 const Heading = styled.h1(props => css`
   font-family : 'Edu NSW ACT Foundation', cursive;
   font-weight: 400;
+  text-decoration: none;
   color: ${props => props.theme.text.heading};
   margin: 0;
+  &:focus {
+    outline: 2px solid ${props => props.theme.interactive};
+  }
 `)
 
 const HeadingXL = styled(Heading)`
@@ -21,6 +25,9 @@ const HeadingM = styled(Heading)`
 const Link = styled(RRLink)(props => css`
   color: ${props => props.theme.interactive};
   text-decoration-style: wavy;
+  &:focus {
+    outline: 2px solid ${props => props.theme.interactive};
+  }
 `)
 
 const Paragraph = styled.p(props => css`
@@ -34,7 +41,7 @@ const Paragraph = styled.p(props => css`
   margin: 0;
 `)
 
-const ScreenReaderOnly = styled.p(props => css`
+const ScreenReaderOnly = styled.span(props => css`
   position:absolute;  
   left:-10000px;
   top:auto;

@@ -3,10 +3,10 @@ import { useEffect, useState } from "react"
 import { Stack } from "../components/Layout"
 import { HeadingL } from "../components/Typography"
 import { Timeline } from "../components/Timeline"
-
-import { career } from '../careerOverview.json'
+import { useLoaderData } from "react-router-dom"
 
 export const Career = props => {
+  const { career } = useLoaderData()
   const [earliest, setEarliest] = useState('')
   const [now, setNow] = useState('')
   useEffect(() => {

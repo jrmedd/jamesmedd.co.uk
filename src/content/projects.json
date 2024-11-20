@@ -5,35 +5,35 @@
       "description": "A public installation, celebrating springtime and poetry, for the National Trust's blossom festival: Bloomtown.",
       "image": "bloomtown.jpg",
       "imageAlt": "The Bloomtown Haiku board in Sadler's Yard in Manchester, the haiku reads: 'To open my mind, To thoughts of glowing sunshine, I must beam within.",
-      "link": "/bloomtown"
+      "link": "bloomtown"
     },
     {
       "title": "Delible ink.",
       "description": "An mental health and mindfulness app focussed on impermanent writing, where words and images fade overnight.",
       "image": "delible.jpg",
       "imageAlt": "A screenshot of the Delible ink. app on desktop. Typed into the app is the following: 'My therapist recently asked me to start writing things down. The purpose of this writing isn't to record anything, just to get it out of my brain. Doing this repeatedly helps me to get things straight, and form positive mental pathways for things that I don't do habitually. I don't like to waste paper, so I created Delible ink. Unlike indelible ink, this ink won't last longer than a day. Anything you type into it is totally private and disappears completely at midnight. It's minimal and unobtrusive, so I can focus on getting my thoughts down without too much distraction. If you think it might help you out, try it out: delible.ink'.",
-      "link": "/delible"
+      "link": "delible"
     },
     {
       "title": "Awkward Arcade",
       "description": "A touring exhibition of unique, playable art games designed to create playful, thought-provoking, and sometimes awkward experiences.",
       "image": "arcade.jpg",
       "imageAlt": "Two people laughing playing The Mashing arcade cabinet; their hands are a blur of motion.",
-      "link": "/arcade"
+      "link": "arcade"
     },
     {
       "title": "DVSA Commercial Vehicle Service",
       "description": "A digital transformation simplifying vehicle testing and compliance for businesses, with accessible and responsive design patterns.",
       "image": "cvs.jpg",
       "imageAlt": "A screenshot of the Manage your vehicle testing app.",
-      "link": "/cvs"
+      "link": "cvs"
     },
     {
       "title": "DESNZ Energy Bill Support Scheme Alternative Fund",
       "description": "A critical service delivery providing support to households that do not have direct relationships with energy suppliers, ensuring equitable access to government funding.",
       "image": "ebss.jpg",
       "imageAlt": "A screenshot of the local authority case processing diagram created to ensure minimal friction when processing support claims whilst minimising the potential for fraud.",
-      "link": "/ebss"
+      "link": "ebss"
     }
   ]
 }

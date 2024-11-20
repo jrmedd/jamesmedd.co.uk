@@ -7,7 +7,7 @@ export const IntroSpiel = props => (
   <Cluster $justify='center' $gap='1.5rem'>
     <ProfileImage alt="A black and white picture of James Medd, smiling with his moustache." />
     <Stack $alignMobile="center">
-      <HeadingL as='h2'>
+      <HeadingL as='h1'>
         <TimeOfDayGreeting />
       </HeadingL>
       <Paragraph>
