@@ -3,6 +3,19 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  assetsInclude: ['./src/components/*.md?raw']
+  plugins: [react({
+      babel: {
+        plugins: [
+          [
+            'babel-plugin-styled-components',
+            {
+              displayName: false,
+              fileName: false,
+              minify: true,
+              transpileTemplateLiterals: false
+            }
+          ]
+        ]
+      }
+    })]
 })
