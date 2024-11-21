@@ -19,8 +19,7 @@ export const Projects = props => {
       feel free to <InternalLink to='contact'>contact me.</InternalLink>
     </Paragraph>
     <Wiggle />
-    <HeadingM as='h2'>Tags</HeadingM>
-    <TagList tags={tags} />
+    <TagList interactive name='Project tags' tags={tags} />
     { projects.map((project, index) => (              
     <Cluster key={`project-${index}`} $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>
       <CircularImage size='8.5rem' src={ project.image } alt={ project.imageAlt } />
