@@ -3,12 +3,6 @@ import { projects } from './content/projects.json'
 
 const markdownFiles = import.meta.glob('/src/content/*.md', { query: '?raw', import: 'default' });
 
-// for (const [path, loader] of Object.entries(markdownFiles)) {
-//   loader().then((content) => {
-//     console.log(`Content from ${path}:`, content);
-//   });
-// }
-
 export const careerLoader = () => ({career})
 
 export const projectsLoader = () => {

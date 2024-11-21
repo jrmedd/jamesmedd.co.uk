@@ -31,5 +31,6 @@ export const GlobalStyle = createGlobalStyle`
     font-optical-sizing: auto;
     font-weight: 350;
     margin: 0;
+    overflow-y: scroll;
   }
 `
