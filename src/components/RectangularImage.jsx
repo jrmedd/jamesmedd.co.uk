@@ -4,7 +4,8 @@ const StyledPicture = styled.picture(props => css`
   display: block;
   border-radius: .25rem;
   overflow: hidden;
-  width: 16rem;
+  width: 100%;
+  aspect-ratio: 4/3;
   height: auto;
   max-width: 100%;
 `)

@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components'
 const ContentContainer = styled.div(props => css`
   margin: 0 auto;
   width: 40rem;
-  max-width: 95%;
-  padding: 1rem 0;
+  max-width: 90%;
+  padding: 2rem 0;
   display: flex;
   flex-flow: column;
   gap: 2rem;
