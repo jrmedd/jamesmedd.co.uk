@@ -30,7 +30,15 @@
       "image": "cvs.jpg",
       "imageAlt": "A screenshot of the Manage your vehicle testing app.",
       "link": "cvs",
-      "tags": ["service design", "digital transformation", "public sector", "frontend design", "frontend development"]
+      "tags": ["ux design", "service design", "digital transformation", "public sector", "frontend design", "frontend development"]
+    },
+    {
+      "title": "Emojinal",
+      "description": "Exploring research on the sentiment of emojis, resulting in an experimental API for determining emoji sentiment.",
+      "image": "emojinal.jpg",
+      "imageAlt": "A screenshot a user journey extracting emoji sentiment from a Miro board",
+      "link": "emojinal",
+      "tags": ["ux design", "sentiment analysis", "data visualisation", "user research"]
     },
     {
       "title": "DESNZ Energy Bill Support Scheme Alternative Fund",
@@ -38,7 +46,7 @@
       "image": "ebss.jpg",
       "imageAlt": "A screenshot of the local authority case processing diagram created to ensure minimal friction when processing support claims whilst minimising the potential for fraud.",
       "link": "ebss",
-      "tags": ["service design", "frontend design", "public sector"]
+      "tags": ["ux design", "service design", "frontend design", "public sector"]
     }
   ]
 }

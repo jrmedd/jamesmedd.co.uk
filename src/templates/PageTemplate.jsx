@@ -15,7 +15,6 @@ export const PageTemplate = props => {
   const location = useLocation()
   useEffect(() => {
     const pageTitle = `${slugToTitle(location.pathname)} – James Medd`
-    console.log(pageTitle)
     document.title = pageTitle
   }, [location])
   return (
