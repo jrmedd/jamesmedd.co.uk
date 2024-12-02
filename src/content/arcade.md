@@ -6,7 +6,7 @@ The [Awkward Arcade](https://awkwardarcade.co.uk) was an experimental arcade of 
 
 ![People stood around the Argument Champion machine](arcade_3.jpg)
 
-The three elements of awkwardness were **interactive** (where games that have unusual control schemes), **thematic** (where games explore themes such as work, love, or even death in ways not typically found in games), and **social** (interacting with arcade machines is a performant, public act, while most typical games are played privately). The arcade worked to challenge public conceptions of what games could be, for both seasoned games and the uninitiated.
+The three elements of awkwardness were **interactive** (where games that have unusual control schemes), **thematic** (where games explore themes such as work, love, or even death in ways not typically found in games), and **social** (interacting with arcade machines is a performant, public act, while most typical games are played privately). The arcade worked to challenge public conceptions of what games could be, for both seasoned gamers and the uninitiated.
 
 ----
 

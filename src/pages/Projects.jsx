@@ -22,9 +22,10 @@ export const Projects = props => {
     <Paragraph>
       I've worked on a variety of creative projects, across sectors, utilising multiple skills.
       If you think I've worked on something you don't see here and want to talk to me about it,
-      feel free to <InternalLink to='contact'>contact me.</InternalLink>
+      feel free to <InternalLink to='/contact'>contact me.</InternalLink>
     </Paragraph>
     <Wiggle />
+    <HeadingM as='h2'>Project tags</HeadingM>
     <TagList checked={selectedTags} interactive onChange={handleFilter} name='Project tags' tags={tags} />
     { projects.filter(project => selectedTags.every(tag => project.tags.includes(tag))).map((project, index) => (              
     <Cluster key={`project-${index}`} $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>

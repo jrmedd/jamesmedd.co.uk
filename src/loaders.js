@@ -1,13 +1,15 @@
 import { career } from './content/career.json'
 import { projects } from './content/projects.json'
+import { skills } from './content/skills.json'
 
 const markdownFiles = import.meta.glob('/src/content/*.md', { query: '?raw', import: 'default' });
 
-export const careerLoader = () => ({career})
+export const careerLoader = () => ({career, skills})
 
 export const projectsLoader = () => {
   const tags = [...new Set(projects.flatMap(obj => obj.tags))].sort()
-  return ({tags, projects})
+  const sortedProjects = projects.sort((a, b) => a.title > b.title ? 1 : -1)
+  return ({projects: sortedProjects, tags})
 }
 
 export const projectLoader = async ({params}) => {

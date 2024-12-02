@@ -47,10 +47,12 @@ const Paragraph = styled.p(props => css`
   font-weight: 350;
   color: ${props => props.theme.text.body};
   line-height: 125%;
-  width: ${props => props.$width ?? '70ch'};
+  width: ${props => props.$width ?? '80ch'};
   max-width: 100%;
   flex-grow: 1;
   margin: 0;
+  padding-left: ${props => props.$leftIndent ?? 'unset'};
+  padding-right: ${props => props.$rightIndent ?? 'unset'};
   text-wrap: pretty;
 `)
 

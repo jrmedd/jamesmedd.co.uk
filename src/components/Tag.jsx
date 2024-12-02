@@ -38,7 +38,7 @@ const TagOutline = styled.li(props => css`
   margin: 0;
   padding: .5rem 1rem;
   font-size: .8rem;
-  cursor: pointer;
+  cursor: ${props => props.$interactive ? 'pointer' : 'unset'};
 `)
 
 
@@ -82,12 +82,18 @@ const StyledLabel = styled.label(props => css`
   position: relative;
 `)
 
+const Legend = styled(HeadingM)(props => css `
+  break-after: auto;
+  margin-bottom: 1rem;
+`)
+
 
 
 export const TagList = props => {
   const checked = props.checked ?? []
   return (
   <StyledList as={props.interactive ? 'fieldset' : 'ul'}>
+    { props.interactive && <Legend as='legend' $interactive={props.interactive}>Tags:</Legend> }
     {
       props.tags.map((tag, index) => <Tag checked={checked.includes(tag)} onChange={props.onChange} name={props.name} interactive={props.interactive} key={`tag-${index}`} text={tag} />)
     }

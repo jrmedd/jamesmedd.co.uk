@@ -1,0 +1,34 @@
+{
+  "skills": [
+    {
+      "skillName": "User experience design",
+      "skillDescription": "Designing from low-fidelity sketches to coded prototypes.",
+      "skillIcon": "ux-design-icon"
+    },
+    {
+      "skillName": "User experience research",
+      "skillDescription": "Conducting participant recruitment, interviews, and workshops.",
+      "skillIcon": "ux-research-icon"
+    },
+    {
+      "skillName": "Visual design (2D and 3D)",
+      "skillDescription": "Experience with tools like Figma, Sketch, Framer, Illustrator, and Fusion 360.",
+      "skillIcon": "visual-design-icon"
+    },
+    {
+      "skillName": "Accessibility-driven web development",
+      "skillDescription": "Specialising in HTML, CSS, JavaScript (ES6 + React), and Python.",
+      "skillIcon": "web-dev-icon"
+    },
+    {
+      "skillName": "Education and public speaking",
+      "skillDescription": "Delivering lightning talks and lectures.",
+      "skillIcon": "education-icon"
+    },
+    {
+      "skillName": "Rapid prototyping for physical products",
+      "skillDescription": "Expertise in 3D printing, laser cutting/CNC, PCB design, and programming.",
+      "skillIcon": "prototyping-icon"
+    }
+  ]
+}
