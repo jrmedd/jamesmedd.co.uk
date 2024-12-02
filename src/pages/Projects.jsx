@@ -25,10 +25,9 @@ export const Projects = props => {
       feel free to <InternalLink to='/contact'>contact me.</InternalLink>
     </Paragraph>
     <Wiggle />
-    <HeadingM as='h2'>Project tags</HeadingM>
     <TagList checked={selectedTags} interactive onChange={handleFilter} name='Project tags' tags={tags} />
     { projects.filter(project => selectedTags.every(tag => project.tags.includes(tag))).map((project, index) => (              
-    <Cluster key={`project-${index}`} $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>
+    <Cluster as='article' key={`project-${index}`} $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>
       <CircularImage size='8.5rem' src={ project.image } alt={ project.imageAlt } />
       <Stack $width='10rem' $alignMobile='center'>
         <HeadingM as='h2'>
