@@ -9,7 +9,7 @@ const TimelineContainer = styled.div(props => css`
 
 const ThenAndNow = styled.span(props => css`
   display: block;
-  font-family : 'Edu NSW ACT Foundation', cursive;
+  font-family : ${props => props.theme.fonts.heading};
   font-size: .8rem;
   @media (min-width: ${props => props.theme.breakpoints.mobile}) {
     position: absolute;
@@ -145,7 +145,7 @@ const EventTitle = styled.span(props => css`
   line-height: 200%;
   display: block;
   position: relative;
-  font-family : 'Edu NSW ACT Foundation', cursive;
+  font-family : ${props => props.theme.fonts.heading};
   font-weight: 400;
   margin-top: .5rem;
   font-size: 1.25rem;

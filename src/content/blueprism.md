@@ -1,50 +1,60 @@
-## Overview
+When I joined Blue Prism, I was stepping into a 20-year-old organisation that had never had a dedicated UX team. I was the second person on this newly formed team, reporting directly to the head of experience.
 
-When I joined Blue Prism, there hadn't been a dedicated UX team for the entirety of the organisation's 20 year history. I was the second person to join the newly formed UX team, reporting directly to the head of experience.
+Blue Prism leads the way in [Robotic Process Automation (RPA)](https://en.wikipedia.org/wiki/Robotic_process_automation), helping businesses automate repetitive tasks for greater efficiency and accuracy. My role in the UX team wasn’t just to create better interfaces—it was to transform how the entire product team worked. Here’s how we did it.
 
-Blue Prism's software is industry-leading in [Robotic Process Automation (RPA)](https://en.wikipedia.org/wiki/Robotic_process_automation) and allows businesses to automate repetitive tasks, increasing efficiency and reducing margin for error.
+---
 
-As part of the UX team, I helped to instigate several major organisational changes to the way the product team worked.
+## Driving change with a design system
 
-## Creation of a design system
+![An example of a UI component – a checkbox – as a shared, reusable Figma component, with multiple variants and themes](blueprism_3)
 
-![An example of a UI component – a checkbox – as a shared, reusable Figma component, with multiple variants and themes](bp-design-system)
+Transitioning from Windows-only desktop software to the web called for a modern, lightweight, accessible design system. Here's how we made it happen:
 
-* As the organisation moved away from Windows-only desktop software to the web, we pushed for a bespoke design system that was lightweight, modern, and accessible.
-* We crafted a consistent design language that considered everything from colour choices (and combinations of colours) and fonts that were internationally consistent (for customers in Europe and Asia).
-* A design backlog was generated based on user needs and use-cases. We collaboratively worked on components in Figma, then worked closely with front-end developers to ensure all requirements were met.
-* Components were documented so that use cases and applications could be understand by all team members.
-* As an experienced designer and developer of accessible web interfaces, I also provided examples of accessible attributes for developers.
+- **Crafting a consistent design language**: We focused on colour combinations, fonts for international consistency (Europe, Asia), and accessibility.
+- **Building collaboratively**: Components were designed in Figma, backed by a design backlog based on user needs. We worked closely with developers to meet all requirements.
+- **Documenting for clarity**: Every component’s use cases and applications were documented for easy adoption by all team members.
+- **Pioneering accessibility**: Leveraging my experience in accessible design, I provided detailed examples of ARIA attributes and interactive behaviour for developers.
 
-![An example of a new component – a combobox – with suggested ARIA attributes and keyboard control behaviour prepared for UI developers](bp-aria)
+![An example of a new component – a combobox – with suggested ARIA attributes and keyboard control behaviour prepared for UI developers](blueprism_4)
 
-## User research programme
+---
 
-* To support the design and development of the first web-enabled release, I worked with the product owner to recruit over 20 customers globally to participate in a user-centred design approach ([double diamond](https://en.wikipedia.org/wiki/Double_Diamond_(design_process_model))).
-* Over the course of a month, I conducted individual ethnographic studies with each customer, observing their workflows and interviewing users to establish in detail how they used the existing software.
-* After analysing the behaviours of each customer, we focused on key areas that we could improve in the web, including incident management for companies with thousands of automated processes and complex scheduling of automated processes.
-* For the first time in the organisation's history, we invited developers and other members of the product team to attend user sessions, and played back key findings to the team so that everyone better understood how the software was used in practice and what user frustrations existed.
-* With a better understanding of what we could improve for our users, we iterated over various design approaches, taking user feedback to see how they found each design, giving confidence and clarity to our development approach.
+## Establishing a user research programme
 
-## Examples
+To support Blue Prism’s first web-enabled release, we took a user-centred approach:
 
-### Complex process scheduling
+- **Engaging globally**: I helped recruit over 20 customers for individual ethnographic studies, observing workflows and conducting interviews.
+- **Uncovering pain points**: We identified areas for improvement, such as incident management and scheduling for companies handling thousands of automated processes.
+- **Bringing the team closer to users**: Developers and product team members were invited to user sessions for the first time, gaining invaluable insights into real-world usage.
+- **Iterating confidently**: Feedback from users shaped each design iteration, giving the team clarity and confidence in our development approach.
+
+---
+
+## Case studies
+
+### Revamping complex scheduling
 
 ![An example the existing scheduler user interface which, while capable, was not optimised for the complex process branching our customers demanded of it.](scheduler-legacy)
 ![The first draft of a scheduler interface, built using elements of our design system, to better reflect the logic applied by our customers.](scheduler-proposed-draft)
 
-* We observed in multiple user sessions that our highest-performing customers were leveraging the software's scheduling functionality to do more than just scheduling.
-* Customers were modularising their processes into groups of tasks that provided logical execution of authentication, queue-loading, spawning multiple simultaneous automations, and fault-reporting, all using an interface that was never optimally designed for this purpose.
-* The sub-optimal interface meant that users had to use additional workarounds to restart failed schedules, maintain complex external documentation to understand the flow and operation of each of the scheduled automations, and, in some cases, create additional custom software to help manage the operation of these flows.
-* Our proposed approach was to have an interface that better-reflected the logic our users were configuring, with the ability to "drop-in" at any point to execute tasks and quickly reconfigure each step if necessary.
+We found that high-performing customers were using the scheduler for more than just scheduling. They modularised processes into logical groups—authentication, queue-loading, fault-reporting, and more. The existing UI wasn’t designed for this complexity, forcing users into workarounds like external documentation and custom software.
 
-### Proposing components in the design system
+Our proposed redesign mirrored their logic, allowing users to "drop-in" at any point, execute tasks, and reconfigure steps quickly.
+
+---
+
+### Proposing components
 
 ![An explainer of datepicker use cases in the context of our software, based on research.](datepicker-basics)
 ![Extended examples of how a datepicker might function in other locales.](datepicker-variations)
 
-* Each time a component was proposed for a design system, we presented a specific use-case example that was particular to the software, such as a datepicker, or combobox.
-* Figma greatly simplified development, as developers could inspect elements in our design system documents and see their attributes. At a certain point, colours, typography, focus states and line-weights were all modular elements of our theme that developers could consume without needing to know specific values and hex numbers etc.
-* Beyond visual elements, behavioural and interactive controls were something I would document with additional slides for developers, and I would occasionally provide more detailed interactive examples using richer prototyping tools such as Framer.
+Each design system component started with a real use-case, like a datepicker or combobox. Figma was a game-changer for collaboration:
 
-![An example of a rich prototype created to demonstrate use cases of a number of components in the context of a new design.](bp-rich-prototype)
+- Developers could inspect design elements directly, consuming colours, typography, and more without needing specifics.
+- Behavioural details were documented with slides, and rich prototypes in tools like Framer brought interactions to life.
+
+<video src="/blueprism.webm"></video>
+
+---
+
+These efforts helped shape Blue Prism’s journey to the web, creating a solid foundation for scalable, user-centred design.

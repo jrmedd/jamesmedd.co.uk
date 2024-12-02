@@ -12,6 +12,10 @@ const breakpoints = {
 
 export const theme = {
   dark: {
+    fonts: {
+      body: `'Inconsolata', monospace`,
+      heading: `'Edu NSW ACT Foundation', cursive`,
+    },
     text: {
       heading: fondant,
       body: cream,

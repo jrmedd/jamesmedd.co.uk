@@ -6,7 +6,23 @@
       "image": "bloomtown.jpg",
       "imageAlt": "The Bloomtown Haiku board in Sadler's Yard in Manchester, the haiku reads: 'To open my mind, To thoughts of glowing sunshine, I must beam within.",
       "link": "bloomtown",
-      "tags": ["art", "full-stack development", "frontend design"]
+      "tags": ["art", "full-stack development", "frontend design", "ux design"]
+    },
+    {
+      "title": "Blue Prism",
+      "description": "Transforming Blue Prism’s product team with a design system and user research programme.",
+      "image": "blueprism.jpg",
+      "imageAlt": "A view of the Blue Prism scheduler redesign",
+      "link": "blueprism",
+      "tags": ["design system", "user research", "frontend design", "accessibility"]
+    },
+    {
+      "title": "Collision",
+      "description": "Imagining the future of our high streets with young people with FutureEverything.",
+      "image": "collision.jpg",
+      "imageAlt": "A graphic from the intro animation of Collision, demonstrating humankind's preoccupation with planting flags.",
+      "link": "collision",
+      "tags": ["art", "frontend design", "full-stack development", "workshops"]
     },
     {
       "title": "Delible ink.",

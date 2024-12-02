@@ -29,6 +29,5 @@ export const Home = () => (
       <DVSA />
       <DESNZ />
     </Cluster>
-    <Wiggle />
   </>
 )

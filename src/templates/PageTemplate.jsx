@@ -2,7 +2,9 @@ import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
 import styled, { css, ThemeProvider } from 'styled-components'
 import { GlobalStyle, theme } from '../theme'
 import { Button } from '../components/Button'
+import { SkipLink } from '../components/SkipLink'
 import { ContentContainer, Header, Main, Nav } from '../components/Layout'
+import { Footer } from '../components/Footer'
 import { HeadingXL } from '../components/Typography'
 import { useEffect } from 'react'
 
@@ -10,20 +12,6 @@ const slugToTitle = string => {
   const firstSlug = string.split('/')[1]
   return firstSlug.length > 0 ? firstSlug.charAt(0).toUpperCase() + firstSlug.slice(1) : 'Home'
 }
-
-const SkipLink = styled(Button)(props => css`
-  position:absolute;  
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden; 
-  &:focus {
-    left: 0;
-    width: unset;
-    height: unset;
-  }
-`)
 
 export const PageTemplate = props => {
   const location = useLocation()
@@ -48,6 +36,7 @@ export const PageTemplate = props => {
       <Main id='main-content'>
         <Outlet />
       </Main>
+      <Footer />
     </ContentContainer>
   </ThemeProvider>
 )}

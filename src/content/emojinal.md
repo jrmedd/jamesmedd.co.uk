@@ -1,6 +1,7 @@
 ## Overview
 
-<video src="/emojinal.webm"></video>
+<video src="/emojinal.webm" caption="Some of the different sentiment values returned by the API for different emojis.
+"></video>
 
 Emojinal is an ongoing experiment that I created after running a series of discovery workshops with customers in Miro. As part of these workshops, we started to plot out the steps of a user journey. Once the basic framework of the journey was created, I invited the users to add post-its to the journey to summarise their mood and emotional response at each stage. To my surprise, some users responded by adding emojis to the journey. To my continued surprise, we collectively seemed to understand as a group what sentiment was being evoked by each response, suggesting we each shared a bilingual ability to read these and translate these visual markers immediately.
 

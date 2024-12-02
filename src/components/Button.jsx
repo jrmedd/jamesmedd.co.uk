@@ -7,7 +7,7 @@ const Button = styled(Link)(props => css`
   line-height: 1rem;
   height: fit-content;
   appearance: none;
-  font-family: 'Inconsolata', monospace;
+  font-family: ${props => props.theme.fonts.body};
   font-weight: 700;
   text-align: center;
   padding: .75rem 1rem;

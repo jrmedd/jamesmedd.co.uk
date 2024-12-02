@@ -16,7 +16,7 @@ export const Career = props => {
     setEarliest(Math.min(...career.map(event => event.year)).toString())
   }, [])
   return (
-  <Stack $alignMobile='center' $gap='1.5rem'>
+  <Stack $alignMobile='center' $gap='3.5rem'>
     <HeadingL id='career' as='h1'>
       Career
     </HeadingL>
@@ -25,7 +25,9 @@ export const Career = props => {
       In that time I've gained a diverse set of creative skills:
     </Paragraph>
     <ScreenReaderOnly as='h2'>My skills:</ScreenReaderOnly>
+    <Stack $gap="1.5rem">
     { skills.map((skill, index) => <Skill key={`skill-${index}`} {...skill} />)}
+    </Stack>
     <Wiggle />
     <HeadingL as='h2'>
       Experience timeline

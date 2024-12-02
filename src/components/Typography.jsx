@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const Heading = styled.h1(props => css`
-  font-family : 'Edu NSW ACT Foundation', cursive;
+  font-family : ${props => props.theme.fonts.heading};
   font-weight: 400;
   text-decoration: none;
   color: ${props => props.theme.text.heading};
@@ -43,7 +43,7 @@ const InternalLink = styled(Link)(props => css`
 `)
 
 const Paragraph = styled.p(props => css`
-  font-family: 'Inconsolata';
+  font-family: ${props => props.theme.fonts.body};
   font-weight: 350;
   color: ${props => props.theme.text.body};
   line-height: 125%;
@@ -56,6 +56,19 @@ const Paragraph = styled.p(props => css`
   text-wrap: pretty;
 `)
 
+const UnorderedList = styled.ul(props => css`
+  font-family: ${props => props.theme.fonts.body};
+  font-weight: 350;
+  line-height: 125%;
+  margin: 0;
+  padding-inline-start: 1.5rem;
+  color: ${props => props.theme.text.body};
+  li + li {
+    margin-top: 1rem; 
+  }
+`)
+
+
 const ScreenReaderOnly = styled.span(props => css`
   position:absolute;  
   left:-10000px;
@@ -65,4 +78,4 @@ const ScreenReaderOnly = styled.span(props => css`
   overflow:hidden;  
 `)
 
-export { ExternalLink, HeadingXL, HeadingL, HeadingM, InternalLink, Paragraph, ScreenReaderOnly }
+export { ExternalLink, HeadingXL, HeadingL, HeadingM, InternalLink, Paragraph, ScreenReaderOnly, UnorderedList }
