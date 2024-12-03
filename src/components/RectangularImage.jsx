@@ -6,14 +6,20 @@ const StyledPicture = styled.picture(props => css`
   overflow: hidden;
   width: 100%;
   aspect-ratio: 4/3;
+  object-fit: contain;
   height: auto;
   max-width: 100%;
+  cursor: ${props => props.onClick ? 'pointer' : 'unset'};
+  transition: transform 0.2s;
+  &:hover {
+    transform: ${props => props.onClick ? 'scale(1.0125)' : 'unset' };
+  }
 `)
 
 const StyledImg = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: ${props => props.$lightbox ? 'contain' : 'cover'};
 `;
 
 export const RectangularImage = props => {
@@ -25,9 +31,10 @@ export const RectangularImage = props => {
   const fileBase = props.src?.replace(/\.(jpg|jpeg|webp|png)$/i, '');
 
   return (
-    <StyledPicture $size={props.size}>
+    <StyledPicture $lightbox={props.lightbox} onClick={props.onClick} $size={props.size}>
       <source srcSet={`/${fileBase}.webp`} type="image/webp" />
-      <StyledImg src={`/${fileBase}.jpg`} alt={props.alt} />
+      <StyledImg $lightbox={props.lightbox} src={`/${fileBase}.jpg`} alt={props.alt} />
+      <StyledImg $lightbox={props.lightbox} src={`/${fileBase}.png`} alt={props.alt} />
     </StyledPicture>
   );
 };

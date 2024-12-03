@@ -6,9 +6,11 @@ import { ExternalLink, HeadingL, HeadingM, Paragraph, UnorderedList } from "../c
 import Markdown from "react-markdown"
 import rehypeRaw from "rehype-raw"
 import { useEffect } from "react"
+import { Lightbox } from "../components/LightBox"
 
 const H2 = props => <HeadingL as='h2'>{props.children}</HeadingL>
 const H3 = props => <HeadingL as='h3'>{props.children}</HeadingL>
+const Div = props => <Paragraph as={Array.from(props.children).some(child => typeof child === 'string') ? 'p' : 'div'}>{props.children}</Paragraph>
 
 export const Project = () => {
   const project = useLoaderData()
@@ -20,14 +22,16 @@ export const Project = () => {
   <HeadingL>
     { project.metadata.title }
   </HeadingL>
-  <Markdown components={
+  <Markdown 
+  unwrapDisallowed={true}
+  components={
     {
       a: ExternalLink,
       h2: H2,
       h3: H3,
       hr: Wiggle,
-      img: RectangularImage,
-      p: Paragraph,
+      img: Lightbox,
+      p: Div,
       ul: UnorderedList,
       video: Video
     }
