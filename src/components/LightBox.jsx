@@ -36,7 +36,7 @@ export const Lightbox = props => {
     <>
     <StyledFigure>
       <RectangularImage src={props.src} alt={props.alt} onClick={openLightbox} />
-      <StyledFigCaption>{ props.alt } (press to enlarge)</StyledFigCaption>
+      <StyledFigCaption>{ props.alt } (press to see the full picture)</StyledFigCaption>
     </StyledFigure>
       {isOpen && (
         <Overlay onClick={closeLightbox}>
