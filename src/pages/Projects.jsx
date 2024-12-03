@@ -1,4 +1,4 @@
-import { useLoaderData, useSearchParams } from "react-router-dom"
+import { useLoaderData } from "react-router"
 
 import { Cluster, Stack } from "../components/Layout"
 import { HeadingL, HeadingM, InternalLink, Paragraph, ScreenReaderOnly } from "../components/Typography"

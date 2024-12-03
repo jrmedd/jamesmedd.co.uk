@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 const Heading = styled.h1(props => css`
   font-family : ${props => props.theme.fonts.heading};

@@ -1,6 +1,6 @@
 import { Component, StrictMode, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router'
 import { PageTemplate } from './templates/PageTemplate.jsx'
 import { Home } from './pages/Home.jsx'
 import { Career } from './pages/Career.jsx'

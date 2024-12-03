@@ -1,11 +1,11 @@
-import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
+import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router'
 import styled, { css, ThemeProvider } from 'styled-components'
 import { GlobalStyle, theme } from '../theme'
 import { Button } from '../components/Button'
 import { SkipLink } from '../components/SkipLink'
 import { ContentContainer, Header, Main, Nav } from '../components/Layout'
 import { Footer } from '../components/Footer'
-import { HeadingXL } from '../components/Typography'
+import { HeadingXL, Paragraph } from '../components/Typography'
 import { useEffect } from 'react'
 
 const slugToTitle = string => {

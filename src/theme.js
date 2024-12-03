@@ -1,3 +1,6 @@
+import '@fontsource-variable/edu-nsw-act-foundation';
+import '@fontsource-variable/inconsolata';
+
 import { createGlobalStyle } from 'styled-components'
 
 const chocolate = '#443938'
@@ -13,8 +16,8 @@ const breakpoints = {
 export const theme = {
   dark: {
     fonts: {
-      body: `'Inconsolata', monospace`,
-      heading: `'Edu NSW ACT Foundation', cursive`,
+      body: `'Inconsolata Variable', monospace`,
+      heading: `'Edu NSW ACT Foundation Variable', cursive`,
     },
     text: {
       heading: fondant,

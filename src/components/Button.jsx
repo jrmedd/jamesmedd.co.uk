@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 const Button = styled(Link)(props => css`
   border: none;

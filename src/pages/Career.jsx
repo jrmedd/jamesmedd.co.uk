@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { Stack } from "../components/Layout"
 import { HeadingL, Paragraph, ScreenReaderOnly } from "../components/Typography"
 import { Timeline } from "../components/Timeline"
-import { useLoaderData } from "react-router-dom"
+import { useLoaderData } from "react-router"
 import { Wiggle } from "../components/Wiggle"
 import { Skill } from "../components/Skill"
 
