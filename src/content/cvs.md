@@ -36,7 +36,7 @@ The new service empowered ATFs to:
 
 I worked closely with the team to ensure these features addressed both user needs and technical requirements, making the service practical and intuitive.  
 
-![One of many photos taken of different whiteboard planning sessions in which we attempted to breakdown a clear path to the future service](roadmap-planning)
+![One of many photos taken of different whiteboard planning sessions in which we attempted to breakdown a clear path to the future service](cvs_3)
 
 ---
 
@@ -79,4 +79,4 @@ My contributions to the "Manage Your Vehicle Testing" service have transformed h
 
 This project has been a rewarding example of how effective design, accessibility, and technical expertise can come together to deliver lasting value in the public sector.
 
-![A zoomed out look at some of the more complex decision trees](branching)
+![A zoomed out look at some of the more complex decision trees](cvs_4)
