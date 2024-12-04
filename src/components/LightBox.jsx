@@ -21,7 +21,6 @@ const Overlay = styled.div`
 
 const ImageWrapper = styled.div`
   max-width: 90%;
-  max-height: 90%;
 `;
 
 
