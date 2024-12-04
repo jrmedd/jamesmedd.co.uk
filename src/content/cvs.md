@@ -36,6 +36,8 @@ The new service empowered ATFs to:
 
 I worked closely with the team to ensure these features addressed both user needs and technical requirements, making the service practical and intuitive.  
 
+![One of many photos taken of different whiteboard planning sessions in which we attempted to breakdown a clear path to the future service](roadmap-planning)
+
 ---
 
 ## Designing a service blueprint for the DVSA  
@@ -67,7 +69,7 @@ By focusing on accessibility, I ensured the service could be used effectively by
 
 To meet security requirements, users accessing the service were required to use **multi-factor authentication (MFA)**. Recognising the diversity of ATF operators – who varied widely on the **digital inclusion scale** – I worked on designing and testing authentication pathways that accommodated varying levels of digital confidence.  
 
-Through extensive user testing, we identified potential barriers, such as limited phone signal at remote ATF sites. I contributed to the design of an **assisted digital pathway**, allowing users to temporarily disable MFA via a landline. This approach balanced security with inclusivity, ensuring users could access the service without unnecessary friction.  
+Through extensive user testing, we identified potential barriers, such as limited phone signal at remote ATF sites. I contributed to the design of an [assisted digital pathway](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction), allowing users to temporarily disable MFA via a landline. This approach balanced security with inclusivity, ensuring users could access the service without unnecessary friction.  
 
 ---
 
@@ -77,15 +79,4 @@ My contributions to the "Manage Your Vehicle Testing" service have transformed h
 
 This project has been a rewarding example of how effective design, accessibility, and technical expertise can come together to deliver lasting value in the public sector.
 
-
-
-
-
-
-
-![One of many photos taken of different whiteboard planning sessions in which we attempted to breakdown a clear path to the future service](roadmap-planning)
-
 ![A zoomed out look at some of the more complex decision trees](branching)
-
-
-["assisted digital"](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction)
