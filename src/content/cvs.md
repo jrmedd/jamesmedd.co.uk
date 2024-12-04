@@ -63,7 +63,7 @@ By focusing on accessibility, I ensured the service could be used effectively by
 
 ## Research-driven multi-factor authentication 
 
-<video src="/mfa-proto.webm"></video>
+<video src="/cvs.webm" caption="A walkthrough of our authentication prototypes, created in Figma"></video>
 
 To meet security requirements, users accessing the service were required to use **multi-factor authentication (MFA)**. Recognising the diversity of ATF operators – who varied widely on the **digital inclusion scale** – I worked on designing and testing authentication pathways that accommodated varying levels of digital confidence.  
 
