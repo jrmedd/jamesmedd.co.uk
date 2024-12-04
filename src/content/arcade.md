@@ -26,6 +26,14 @@ This work was carried out while I was a resident of the **MadLab Arts+Tech accel
 
 Each game in the Awkward Arcade was housed in a bespoke arcade cabinet or featured a custom controller, all created by me. These unique physical setups enhanced the interactive and unconventional nature of the games.
 
+![The hardware-less, fully-laser-cut second iteration of machines, at Somerset House 2017](arcade_7)
+
+After the initial set of machines, I developed designs for lower effort/impact set of machines that used interlocking, laser-cut parts without additional hardware. These prototype machines were first displayed at [Now Play This, Somerset House](https://www.somersethouse.org.uk/press/now-play-game-changers-another-way-play) in 2017. 
+
+![The hardware for Dan Hett's The Loss Levels at Somerset house 2018](arcade_8)
+
+This design evolved yet again for a third iteration of hardware, designed for [Dan Hett's The Loss Levels](https://danhett.itch.io/the-loss-levels), commissioned by Now Play This in 2018.
+
 ----
 
 ## Exhibitions

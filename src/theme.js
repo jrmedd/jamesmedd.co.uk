@@ -13,6 +13,13 @@ const breakpoints = {
   desktop: '1200px'
 }
 
+const wiggleParameters = {
+  height: 24,
+  amplitude: 8,
+  waveLength: 16,
+  phase: 8
+}
+
 export const theme = {
   dark: {
     fonts: {
@@ -25,7 +32,8 @@ export const theme = {
     },
     interactive: fondant,
     background: chocolate,
-    breakpoints
+    breakpoints,
+    wiggleParameters
   }
 }
 export const GlobalStyle = createGlobalStyle`
