@@ -6,25 +6,45 @@ import { SkipLink } from '../components/SkipLink'
 import { ContentContainer, Header, Main, Nav } from '../components/Layout'
 import { Footer } from '../components/Footer'
 import { HeadingXL, Paragraph } from '../components/Typography'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { useMeasure } from '@uidotdev/usehooks'
+import { generateBezierWave } from '../generateBezierWave'
 
 const slugToTitle = string => {
   const firstSlug = string.split('/')[1]
   return firstSlug.length > 0 ? firstSlug.charAt(0).toUpperCase() + firstSlug.slice(1) : 'Home'
 }
 
+const defaultTheme = theme.dark
+
+const wiggleParameters = { 
+  height: defaultTheme.wiggleParameters.height,
+  amplitude: defaultTheme.wiggleParameters.amplitude,
+  waveLength: defaultTheme.wiggleParameters.waveLength,
+  phase: defaultTheme.wiggleParameters.phase
+}
+
 export const PageTemplate = props => {
   const location = useLocation()
+  const [computedWidth, setComputedWidth] = useState(640)
+  const [bezierWave, setBezierWave] = useState('')
+  const [ref, { width }] = useMeasure()
+  useEffect(() => {
+    if (width !== computedWidth) {
+      setComputedWidth(width)
+      setBezierWave(generateBezierWave({width, ...wiggleParameters}))
+    }
+  }, [width])
   useEffect(() => {
     const pageTitle = `${slugToTitle(location.pathname)} – James Medd`
     document.title = pageTitle
   }, [location])
   return (
-  <ThemeProvider theme={theme.dark}>
+  <ThemeProvider theme={{...defaultTheme, computedWidth, bezierWave}}>
     <GlobalStyle />
     <ScrollRestoration />
     <SkipLink as='a' href='#main-content'>Skip to main content</SkipLink>
-    <ContentContainer>
+    <ContentContainer ref={ref}>
       <Header>
         <HeadingXL as={Link} to='/' aria-label='Home – James Medd'>James Medd</HeadingXL>
         <Nav>
