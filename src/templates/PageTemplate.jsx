@@ -31,8 +31,9 @@ export const PageTemplate = props => {
   const [ref, { width }] = useMeasure()
   useEffect(() => {
     if (width !== computedWidth) {
-      setComputedWidth(width)
-      setBezierWave(generateBezierWave({width, ...wiggleParameters}))
+      const cappedWidth = wiggleParameters.waveLength * Math.floor(width/wiggleParameters.waveLength)
+      setComputedWidth(cappedWidth)
+      setBezierWave(generateBezierWave({width: cappedWidth, ...wiggleParameters}))
     }
   }, [width])
   useEffect(() => {

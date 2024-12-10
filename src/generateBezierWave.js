@@ -1,6 +1,6 @@
 export const generateBezierWave = params => {
   let path = `M 0 ${params.height / 2}`;
-  const steps = Math.ceil(params.width / params.waveLength);
+  const steps = Math.floor(params.width / params.waveLength);
 
   for (let i = 0; i < steps; i++) {
     const x1 = i * params.waveLength;
