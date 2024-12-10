@@ -2,11 +2,6 @@ import { Component, StrictMode, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import { PageTemplate } from './templates/PageTemplate.jsx'
-import { Home } from './pages/Home.jsx'
-import { Career } from './pages/Career.jsx'
-import { Contact } from './pages/Contact.jsx'
-import { Project } from './pages/Project.jsx'
-import { Projects } from './pages/Projects.jsx'
 
 import { careerLoader, projectLoader, projectsLoader } from './loaders.js'
 
@@ -17,16 +12,16 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        Component: Home
+        lazy: () => import('./routes/_index.jsx')
       },
       {
         loader: careerLoader,
         path: 'career',
-        Component: Career
+        lazy: () => import('./routes/career.jsx')
       },
       {
         path: 'contact',
-        Component: Contact
+        lazy: () => import('./routes/contact.jsx')
       }
     ]
   },
@@ -37,12 +32,12 @@ const router = createBrowserRouter([
       {
         loader: projectsLoader,
         path: '',
-        Component: Projects
+        lazy: () => import('./routes/projects.jsx')
       },
       {
         loader: projectLoader,
         path: ':project',
-        Component: Project
+        lazy: () => import('./routes/projects.$project.jsx')
       }
     ]
   }

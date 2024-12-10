@@ -7,7 +7,7 @@ import { TagList } from "../components/Tag"
 import { Wiggle } from "../components/Wiggle"
 import { useState } from "react"
 
-export const Projects = props => {
+export const Component = props => {
   const  { projects, tags } = useLoaderData()
   const [selectedTags, setSelectedTags] = useState([])
   const toggleItemInArray = (array, item) => array.includes(item) ? array.filter((i) => i !== item) : [...array, item];

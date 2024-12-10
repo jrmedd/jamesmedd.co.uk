@@ -12,7 +12,7 @@ import { Scouts } from '../components/logos/Scouts'
 import { BA } from '../components/logos/BA'
 import { BluePrism } from '../components/logos/BluePrism'
 
-export const Home = () => (
+export const Component = () => (
   <>
     <IntroSpiel />
     <Wiggle />
