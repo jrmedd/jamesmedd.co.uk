@@ -2,7 +2,8 @@ import { Cluster, Stack } from "../components/Layout"
 import { ChatBubble } from "../components/ChatBubble"
 import { ExternalLink, HeadingL, Paragraph } from "../components/Typography"
 import { Socials } from "../components/Socials"
-export const Contact = () => (
+
+export const Component = () => (
   <Stack $alignMobile='center' $gap='1.5rem'>
     <Cluster $justify='center' $align='center' $gap='1.5rem'>
       <ChatBubble size='6rem' />

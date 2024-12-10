@@ -7,7 +7,7 @@ import { useLoaderData } from "react-router"
 import { Wiggle } from "../components/Wiggle"
 import { Skill } from "../components/Skill"
 
-export const Career = props => {
+export const Component = props => {
   const { career, skills } = useLoaderData()
   const [earliest, setEarliest] = useState('')
   const [now, setNow] = useState('')

@@ -14,7 +14,7 @@ const H3 = props => <HeadingL as='h3'>{props.children}</HeadingL>
 const Div = props => <Paragraph as={Array.from(props.children).some(child => typeof child === 'string') ? 'p' : 'div'}>{props.children}</Paragraph>
 
 
-export const Project = () => {
+export const Component = () => {
   const project = useLoaderData()
   useEffect(() => {
     document.title = `${project.metadata.title} – ${document.title}`
