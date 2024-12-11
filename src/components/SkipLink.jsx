@@ -1,7 +1,9 @@
 import styled, { css } from 'styled-components'
-import { Button } from './Button'
+import { Link } from 'react-router'
 
-export const SkipLink = styled(Button)(props => css`
+export const SkipLink = styled(Link)(props => css`
+  color: ${props => props.theme.interactive};
+  outline: none;
   position:absolute;  
   left:-10000px;
   top:auto;
@@ -12,5 +14,7 @@ export const SkipLink = styled(Button)(props => css`
     left: 0;
     width: unset;
     height: unset;
+    border: 2px solid ${props => props.theme.interactive};
+    padding: 1rem;
   }
 `)

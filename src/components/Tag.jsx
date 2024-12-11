@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from 'styled-components'
-import { HeadingM, ScreenReaderOnly } from './Typography'
+import { Legend, ScreenReaderOnly } from './Typography'
 
 String.prototype.camel = function() {
   return this
@@ -82,18 +82,11 @@ const StyledLabel = styled.label(props => css`
   position: relative;
 `)
 
-const Legend = styled(HeadingM)(props => css `
-  break-after: auto;
-  margin-bottom: 1rem;
-`)
-
-
-
 export const TagList = props => {
   const checked = props.checked ?? []
   return (
   <StyledList as={props.interactive ? 'fieldset' : 'ul'}>
-    { props.interactive && <><Legend as='legend' aria-describedby='tag-hint' $interactive={props.interactive}>Tags:</Legend><ScreenReaderOnly id="tag-hint">Select tags to filter projects</ScreenReaderOnly></> }
+    { props.interactive && <><Legend aria-describedby='tag-hint' $size='m'>Tags:</Legend><ScreenReaderOnly id="tag-hint">Select tags to filter projects</ScreenReaderOnly></> }
     {
       props.tags.map((tag, index) => <Tag checked={checked.includes(tag)} onChange={props.onChange} name={props.name} interactive={props.interactive} key={`tag-${index}`} text={tag} />)
     }

@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router"
 
 import { Cluster, Stack } from "../components/Layout"
-import { HeadingL, HeadingM, InternalLink, Paragraph, ScreenReaderOnly } from "../components/Typography"
+import { Heading, InternalLink, Paragraph, ScreenReaderOnly } from "../components/Typography"
 import { CircularImage } from "../components/CircularImage"
 import { TagList } from "../components/Tag"
 import { Wiggle } from "../components/Wiggle"
@@ -16,9 +16,9 @@ export const Component = props => {
   }
   return(
   <Stack $alignMobile='center' $gap='3.5rem'>
-    <HeadingL id='projects' as='h1'>
+    <Heading id='projects' $size='l'>
       Projects
-    </HeadingL>
+    </Heading>
     <Paragraph>
       I've worked on a variety of creative projects, across sectors, utilising multiple skills.
       If you think I've worked on something you don't see here and want to talk to me about it,
@@ -30,9 +30,9 @@ export const Component = props => {
     <Cluster as='article' key={`project-${index}`} $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>
       <CircularImage size='8.5rem' src={ project.image } alt={ project.imageAlt } />
       <Stack $width='10rem' $alignMobile='center'>
-        <HeadingM as='h2'>
+        <Heading as='h2' $size='m'>
           { project.title }
-        </HeadingM>
+        </Heading>
         <Paragraph $width='30rem'>
           { project.description } <InternalLink to={`${project.link}`}>Read more<ScreenReaderOnly> about { project.tile }</ScreenReaderOnly></InternalLink>
         </Paragraph>
