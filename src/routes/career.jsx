@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 import { Stack } from "../components/Layout"
-import { HeadingL, Paragraph, ScreenReaderOnly } from "../components/Typography"
+import { Heading, Paragraph, ScreenReaderOnly } from "../components/Typography"
 import { Timeline } from "../components/Timeline"
 import { useLoaderData } from "react-router"
 import { Wiggle } from "../components/Wiggle"
@@ -17,9 +17,9 @@ export const Component = props => {
   }, [])
   return (
   <Stack $alignMobile='center' $gap='3.5rem'>
-    <HeadingL id='career' as='h1'>
+    <Heading $size='l' id='career'>
       Career
-    </HeadingL>
+    </Heading>
     <Paragraph>
       My career has been a squiggly one, ranging from museum installation work through to design consultancy.
       In that time I've gained a diverse set of creative skills:
@@ -29,9 +29,9 @@ export const Component = props => {
     { skills.map((skill, index) => <Skill key={`skill-${index}`} {...skill} />)}
     </Stack>
     <Wiggle />
-    <HeadingL as='h2'>
+    <Heading as='h2' $size='l'>
       Experience timeline
-    </HeadingL>
+    </Heading>
     <Timeline earliest={earliest} now={now} events={career} />
   </Stack>
   )

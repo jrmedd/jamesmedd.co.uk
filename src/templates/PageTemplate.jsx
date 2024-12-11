@@ -5,7 +5,7 @@ import { Button } from '../components/Button'
 import { SkipLink } from '../components/SkipLink'
 import { ContentContainer, Header, Main, Nav } from '../components/Layout'
 import { Footer } from '../components/Footer'
-import { HeadingXL, Paragraph } from '../components/Typography'
+import { Heading, Paragraph } from '../components/Typography'
 import { useEffect, useState } from 'react'
 import { useMeasure } from '@uidotdev/usehooks'
 import { generateBezierWave } from '../generateBezierWave'
@@ -47,7 +47,7 @@ export const PageTemplate = props => {
     <SkipLink as='a' href='#main-content'>Skip to main content</SkipLink>
     <ContentContainer ref={ref}>
       <Header>
-        <HeadingXL as={Link} to='/' aria-label='Home – James Medd'>James Medd</HeadingXL>
+        <Heading $size='xl' as={Link} to='/' aria-label='Home -James Medd'>James Medd</Heading>
         <Nav>
           <Button to='/career'>Career</Button>
           <Button to='/projects'>Projects</Button>

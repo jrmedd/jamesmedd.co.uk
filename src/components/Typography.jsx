@@ -1,7 +1,19 @@
 import styled, { css } from 'styled-components'
 import { Link } from 'react-router'
 
-const Heading = styled.h1(props => css`
+const HeadingSizes =  {
+  xl: css`
+  font-size: 1.9rem;
+  `,
+  l: css`
+  font-size: 1.5rem;
+  `,
+  m: css`
+  font-size: 1.25rem;
+  `
+}
+
+const HeadingCore = css`
   font-family : ${props => props.theme.fonts.heading};
   font-weight: 400;
   text-decoration: none;
@@ -10,18 +22,19 @@ const Heading = styled.h1(props => css`
   &:focus {
     outline: 2px solid ${props => props.theme.interactive};
   }
+`
+
+const Heading = styled.h1(props => css`
+  ${HeadingCore};
+  ${props => HeadingSizes[props.$size]};
 `)
 
-const HeadingXL = styled(Heading)`
-  font-size: 1.9rem;
-`
-
-const HeadingL = styled(Heading)`
-  font-size: 1.5rem;
-`
-const HeadingM = styled(Heading)`
-  font-size: 1.25rem;
-`
+const Legend  = styled.legend(props => css`
+  ${HeadingCore};
+  ${props => HeadingSizes[props.$size]};
+  break-after: auto;
+  margin-bottom: 1rem;
+`)
 
 const ExternalLink = styled.a(props => css`
   color: ${props => props.theme.interactive};
@@ -78,4 +91,4 @@ const ScreenReaderOnly = styled.span(props => css`
   overflow:hidden;  
 `)
 
-export { ExternalLink, HeadingXL, HeadingL, HeadingM, InternalLink, Paragraph, ScreenReaderOnly, UnorderedList }
+export { ExternalLink, Heading, InternalLink, Legend, Paragraph, ScreenReaderOnly, UnorderedList }
