@@ -47,7 +47,7 @@ export const PageTemplate = props => {
     <SkipLink as='a' href='#main-content'>Skip to main content</SkipLink>
     <ContentContainer ref={ref}>
       <Header>
-        <Heading $size='xl' as={Link} to='/' aria-label='Home -James Medd'>James Medd</Heading>
+        <Heading $size='xl' as={Link} to='/' aria-label='Home - James Medd'>James Medd</Heading>
         <Nav>
           <Button to='/career'>Career</Button>
           <Button to='/projects'>Projects</Button>

@@ -34,7 +34,7 @@ export const Component = props => {
           { project.title }
         </Heading>
         <Paragraph $width='30rem'>
-          { project.description } <InternalLink to={`${project.link}`}>Read more<ScreenReaderOnly> about { project.tile }</ScreenReaderOnly></InternalLink>
+          { project.description } <InternalLink to={`${project.link}`}>Read more <ScreenReaderOnly>about { project.title }</ScreenReaderOnly></InternalLink>
         </Paragraph>
         <TagList tags={project.tags} />
       </Stack>
