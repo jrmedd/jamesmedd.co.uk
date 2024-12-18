@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import { Link } from 'react-router'
 
-export const SkipLink = styled(Link)(props => css`
+export const SkipLink = styled.a(props => css`
   color: ${props => props.theme.interactive};
   outline: none;
   position:absolute;  
@@ -16,5 +16,6 @@ export const SkipLink = styled(Link)(props => css`
     height: unset;
     border: 2px solid ${props => props.theme.interactive};
     padding: 1rem;
+    background-color: ${props => props.theme.background};
   }
 `)

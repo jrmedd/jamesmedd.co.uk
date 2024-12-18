@@ -14,6 +14,7 @@ export const Component = props => {
   const handleFilter = event => {
     setSelectedTags(toggleItemInArray(selectedTags,event.target.value))
   }
+  const filteredProjects = projects.filter(project => selectedTags.every(tag => project.tags.includes(tag)))
   return(
   <Stack $alignMobile='center' $gap='3.5rem'>
     <Heading id='projects' $size='l'>
@@ -26,7 +27,7 @@ export const Component = props => {
     </Paragraph>
     <Wiggle />
     <TagList checked={selectedTags} interactive onChange={handleFilter} name='Project tags' tags={tags} />
-    { projects.filter(project => selectedTags.every(tag => project.tags.includes(tag))).map((project, index) => (              
+    { filteredProjects.length > 0 ?(filteredProjects.map((project, index) => (              
     <Cluster as='article' key={`project-${index}`} $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>
       <CircularImage size='8.5rem' src={ project.image } alt={ project.imageAlt } />
       <Stack $width='10rem' $alignMobile='center'>
@@ -38,8 +39,7 @@ export const Component = props => {
         </Paragraph>
         <TagList tags={project.tags} />
       </Stack>
-    </Cluster>
-    )) }
+    </Cluster>))) : <Paragraph>No projects found. Try selecting fewer tags.</Paragraph>}
   </Stack>
   )
 }

@@ -5,8 +5,8 @@ import { Button } from '../components/Button'
 import { SkipLink } from '../components/SkipLink'
 import { ContentContainer, Header, Main, Nav } from '../components/Layout'
 import { Footer } from '../components/Footer'
-import { Heading, Paragraph } from '../components/Typography'
-import { useEffect, useState } from 'react'
+import { Heading, Paragraph, ScreenReaderOnly } from '../components/Typography'
+import { useEffect, useRef, useState } from 'react'
 import { useMeasure } from '@uidotdev/usehooks'
 import { generateBezierWave } from '../generateBezierWave'
 
@@ -27,7 +27,9 @@ const wiggleParameters = {
 export const PageTemplate = props => {
   const location = useLocation()
   const [computedWidth, setComputedWidth] = useState(640)
+  const [accessiblePageTitle, setAccessiblePageTitle] = useState("Viewing James Medd's website")
   const [bezierWave, setBezierWave] = useState('')
+  const pageStartRef = useRef(null)
   const [ref, { width }] = useMeasure()
   useEffect(() => {
     if (width !== computedWidth) {
@@ -37,13 +39,19 @@ export const PageTemplate = props => {
     }
   }, [width])
   useEffect(() => {
-    const pageTitle = `${slugToTitle(location.pathname)} – James Medd`
-    document.title = pageTitle
-  }, [location])
+    const newTitle = `${slugToTitle(location.pathname)} – James Medd`
+    document.title = newTitle
+    pageStartRef?.current.focus()
+  }, [location.pathname])
+
+  useEffect(() => {
+    setAccessiblePageTitle(`Viewing page: ${document.title}`)
+  }, [document.title])
   return (
   <ThemeProvider theme={{...defaultTheme, computedWidth, bezierWave}}>
     <GlobalStyle />
     <ScrollRestoration />
+    <ScreenReaderOnly as='p' ref={pageStartRef} tabIndex='-1'>{accessiblePageTitle}</ScreenReaderOnly>
     <SkipLink as='a' href='#main-content'>Skip to main content</SkipLink>
     <ContentContainer ref={ref}>
       <Header>

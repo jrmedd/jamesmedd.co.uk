@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
-import { Link } from 'react-router'
+import { NavLink } from 'react-router'
 
-const Button = styled(Link)(props => css`
+const Button = styled(NavLink)(props => css`
   border: none;
   font-size: 1rem;
   line-height: 1rem;
@@ -23,11 +23,17 @@ const Button = styled(Link)(props => css`
   &:hover {
     transform: scale(1.1);
   }
+  &.active:focus,
   &:focus {
     background-color: ${props => props.theme.interactive};
     color: ${props => props.theme.background};
     outline: none;
     transform: scale(1.1);
+  }
+  &.active {
+    background-color: ${props => props.theme.interactive}80;
+    color: ${props => props.theme.background};
+    transform: scale(0.9);
   }
 `)
 
