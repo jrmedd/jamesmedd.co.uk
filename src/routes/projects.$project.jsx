@@ -11,6 +11,7 @@ const A = props => <ExternalLink href={props.href}>{props.children}</ExternalLin
 const H2 = props => <Heading as='h2' $size='l'>{props.children}</Heading>
 const H3 = props => <Heading as='h3' $size='m'>{props.children}</Heading>
 const Div = props => <Paragraph as={Array.from(props.children).some(child => typeof child === 'string') ? 'p' : 'div'}>{props.children}</Paragraph>
+const UL = props => <UnorderedList>{props.children}</UnorderedList>
 
 
 export const Component = () => {
@@ -29,7 +30,7 @@ export const Component = () => {
       hr: Wiggle,
       img: Lightbox,
       p: Div,
-      ul: UnorderedList,
+      ul: UL,
       video: Video
     }
   }rehypePlugins={[rehypeRaw]}>
