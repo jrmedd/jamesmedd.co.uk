@@ -29,7 +29,6 @@ export const RectangularImage = props => {
   }
 
   const fileBase = props.src?.replace(/\.(jpg|jpeg|webp|png)$/i, '');
-  console.log(fileBase)
   return (
     <StyledPicture $lightbox={props.lightbox} onClick={props.onClick} $size={props.size}>
       <source srcSet={`/${fileBase}.webp`} type="image/webp" />
