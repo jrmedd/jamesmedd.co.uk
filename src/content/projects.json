@@ -63,6 +63,14 @@
       "imageAlt": "A screenshot of the local authority case processing diagram created to ensure minimal friction when processing support claims whilst minimising the potential for fraud.",
       "link": "ebss",
       "tags": ["ux design", "service design", "frontend design", "public sector", "accessibility"]
+    },
+    {
+      "title": "iBinned.it",
+      "description": "A rubbish idea for workshops based on generating datasets with mapping and still the only domain name I regret letting go of.",
+      "image": "ibinnedit.jpg",
+      "imageAlt": "A heatmap of litter logged in one afternoon of tracking by Manchester students",
+      "link": "ibinnedit",
+      "tags": ["ux design", "workshops", "full-stack development", "art", "data visualisation"]
     }
   ]
 }
