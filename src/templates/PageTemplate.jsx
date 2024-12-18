@@ -1,4 +1,4 @@
-import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router'
+import { Link, Outlet, ScrollRestoration, useLoaderData, useLocation, useMatches } from 'react-router'
 import styled, { css, ThemeProvider } from 'styled-components'
 import { GlobalStyle, theme } from '../theme'
 import { Button } from '../components/Button'
@@ -26,8 +26,9 @@ const wiggleParameters = {
 
 export const PageTemplate = props => {
   const location = useLocation()
+  const matches = useMatches()
+  const match = matches.find(match => Boolean(match.handle?.pageTitle))
   const [computedWidth, setComputedWidth] = useState(640)
-  const [accessiblePageTitle, setAccessiblePageTitle] = useState("Viewing James Medd's website")
   const [bezierWave, setBezierWave] = useState('')
   const pageStartRef = useRef(null)
   const [ref, { width }] = useMeasure()
@@ -39,24 +40,19 @@ export const PageTemplate = props => {
     }
   }, [width])
   useEffect(() => {
-    const newTitle = `${slugToTitle(location.pathname)} – James Medd`
-    document.title = newTitle
+    document.title = `${match.handle.pageTitle(match.data)} – James Medd`
     pageStartRef?.current.focus()
   }, [location.pathname])
-
-  useEffect(() => {
-    setAccessiblePageTitle(`Viewing page: ${document.title}`)
-  }, [document.title])
   return (
   <ThemeProvider theme={{...defaultTheme, computedWidth, bezierWave}}>
     <GlobalStyle />
     <ScrollRestoration />
-    <ScreenReaderOnly as='p' ref={pageStartRef} tabIndex='-1'>{accessiblePageTitle}</ScreenReaderOnly>
+    <ScreenReaderOnly  aria-live='polite' aria-atomic='true' as='aside' ref={pageStartRef} tabIndex='-1'>{`Viewing page: ${document.title}`}</ScreenReaderOnly>
     <SkipLink as='a' href='#main-content'>Skip to main content</SkipLink>
     <ContentContainer ref={ref}>
-      <Header>
+      <Header role='banner'>
         <Heading $size='xl' as={Link} to='/' aria-label='Home - James Medd'>James Medd</Heading>
-        <Nav>
+        <Nav aria-label='primary'>
           <Button to='/career'>Career</Button>
           <Button to='/projects'>Projects</Button>
           <Button to='/contact'>Contact</Button>

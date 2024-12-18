@@ -85,8 +85,8 @@ const StyledLabel = styled.label(props => css`
 export const TagList = props => {
   const checked = props.checked ?? []
   return (
-  <StyledList as={props.interactive ? 'fieldset' : 'ul'}>
-    { props.interactive && <><Legend aria-describedby='tag-hint' $size='m'>Tags:</Legend><ScreenReaderOnly id="tag-hint">Select tags to filter projects</ScreenReaderOnly></> }
+  <StyledList aria-describedby={props.interactive && 'tag-hint'} aria-label={props['aria-label']} as={props.interactive ? 'fieldset' : 'ul'}>
+    { props.interactive && <><Legend $size='m'>Tags:</Legend><ScreenReaderOnly id="tag-hint">Select tags to filter projects</ScreenReaderOnly></> }
     {
       props.tags.map((tag, index) => <Tag checked={checked.includes(tag)} onChange={props.onChange} name={props.name} interactive={props.interactive} key={`tag-${index}`} text={tag} />)
     }
