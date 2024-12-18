@@ -1,6 +1,6 @@
 ## Overview
 
-![The three steps of the Collision app, from drawing a flag to planting a flag](collision_2)
+![The three steps of the Collision app, from drawing a flag to planting a flag](collision_2.png)
 
 "Collision" was my contribution to *this place [of mine]*, a digital arts initiative by [FutureEverything](https://futureeverything.org). This award-winning project gave young people across Greater Manchester a platform to envision the future of their high streets, combining creative digital tools and collaborative methodologies to inspire change.
 

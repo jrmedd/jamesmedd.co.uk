@@ -5,7 +5,7 @@ const StyledPicture = styled.picture(props => css`
   border-radius: .25rem;
   overflow: hidden;
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: ${props.$lightbox ? 'unset' : '4/3'};
   object-fit: contain;
   height: auto;
   max-width: 100%;
@@ -29,12 +29,10 @@ export const RectangularImage = props => {
   }
 
   const fileBase = props.src?.replace(/\.(jpg|jpeg|webp|png)$/i, '');
-
   return (
     <StyledPicture $lightbox={props.lightbox} onClick={props.onClick} $size={props.size}>
       <source srcSet={`/${fileBase}.webp`} type="image/webp" />
-      <StyledImg $lightbox={props.lightbox} src={`/${fileBase}.jpg`} alt={props.alt} />
-      <StyledImg $lightbox={props.lightbox} src={`/${fileBase}.png`} alt={props.alt} />
+      <StyledImg $lightbox={props.lightbox} src={`/${props.src}`} alt={props.alt} />
     </StyledPicture>
   );
 };

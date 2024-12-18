@@ -1,6 +1,6 @@
 ## Overview
 
-![A screenshot of the Delible ink. app](delible.webp)
+![A screenshot of the Delible ink. app](delible.jpg)
 
 While I was having my therapy, my therapist asked me to start writing things down. The purpose of this writing wasn't to record anything, just to get it out of my brain. Doing this repeatedly helps our brains to get things straight, and form positive mental pathways for things that we don't do habitually. I don't like to waste paper, so I created Delible ink.
 

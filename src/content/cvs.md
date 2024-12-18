@@ -1,6 +1,6 @@
 ## Overview
 
-![A screenshot of the Manage your vehicle testing app](cvs)
+![A screenshot of the Manage your vehicle testing app](cvs.jpg)
 
 This is undoubtedly one of the most complex services I've ever had to work on. The DVSA is responsible for safety on Britain's roads and tests hundreds of thousands of vehicles every year to ensure they meet safety standards. The existing business processes were complex and inefficient, the existing software packages slow and outdated, and a previous supplier had failed to deliver the project, meaning we had to pull on a lot of existing loose threads to get the job done.
 
@@ -8,7 +8,7 @@ As part of a wider initiative to modernise legacy processes at the Driver and Ve
 
 The service users include commercial customers – haulage operators and bus companies – private vehicle owners and importers, and staff members within the DVSA across multiple departments.
 
-![A zoomed out look at the first draft of a CVS service blueprint](cvs_1)
+![A zoomed out look at the first draft of a CVS service blueprint](cvs_1.jpg)
 
 I later returned to the project in 2024 to complete the Approvals Transformation Implementation, which covered applications for vehicle approvals.
 
@@ -36,7 +36,7 @@ The new service empowered ATFs to:
 
 I worked closely with the team to ensure these features addressed both user needs and technical requirements, making the service practical and intuitive.  
 
-![One of many photos taken of different whiteboard planning sessions in which we attempted to breakdown a clear path to the future service](cvs_3)
+![One of many photos taken of different whiteboard planning sessions in which we attempted to breakdown a clear path to the future service](cvs_3.jpg)
 
 ---
 
@@ -52,7 +52,7 @@ This blueprint evolved to include decision trees and documentation for complex w
 
 ## Iterative design and accessibility
 
-![A view of "Today's completed tests" within "Manage your vehicle testing"](cvs_2)
+![A view of "Today's completed tests" within "Manage your vehicle testing"](cvs_2.jpg)
 
 I led efforts to revisit the existing designs, which featured accessibility issues and a confusing information architecture. My key contributions included:  
 - Aligning designs with user research findings.  
