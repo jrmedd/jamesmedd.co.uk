@@ -12,8 +12,10 @@ export const Component = props => {
   const [selectedTags, setSelectedTags] = useState([])
   const toggleItemInArray = (array, item) => array.includes(item) ? array.filter((i) => i !== item) : [...array, item];
   const handleFilter = event => {
-    setSelectedTags(toggleItemInArray(selectedTags,event.target.value))
+    setSelectedTags(toggleItemInArray(selectedTags, event.target.value))
   }
+  const filteredProjects = projects.filter(project => selectedTags.every(tag => project.tags.includes(tag)))
+  const foundProjectsMessage = filteredProjects.length > 0 ? `Showing ${filteredProjects.length} project${filteredProjects.length !== 1 ? 's' : ''} ${selectedTags.length === 0 ? 'with no filters applied' : `based on the filters: ${selectedTags.join(', ')}`}`: 'No projects found. Try selecting fewer tags.'
   return(
   <Stack $alignMobile='center' $gap='3.5rem'>
     <Heading id='projects' $size='l'>
@@ -26,20 +28,22 @@ export const Component = props => {
     </Paragraph>
     <Wiggle />
     <TagList checked={selectedTags} interactive onChange={handleFilter} name='Project tags' tags={tags} />
-    { projects.filter(project => selectedTags.every(tag => project.tags.includes(tag))).map((project, index) => (              
-    <Cluster as='article' key={`project-${index}`} $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>
-      <CircularImage size='8.5rem' src={ project.image } alt={ project.imageAlt } />
-      <Stack $width='10rem' $alignMobile='center'>
-        <Heading as='h2' $size='m'>
-          { project.title }
-        </Heading>
-        <Paragraph $width='30rem'>
-          { project.description } <InternalLink to={`${project.link}`}>Read more <ScreenReaderOnly>about { project.title }</ScreenReaderOnly></InternalLink>
-        </Paragraph>
-        <TagList tags={project.tags} />
-      </Stack>
-    </Cluster>
-    )) }
+    <ScreenReaderOnly as='p' aria-live='polite' aria-atomic='true' aria-role='status'>{foundProjectsMessage}</ScreenReaderOnly>
+    {filteredProjects.length > 0 ? 
+     filteredProjects.map((project, index) => (              
+        <Cluster as='article' key={`project-${index}`} $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>
+          <CircularImage size='8.5rem' src={ project.image } alt={ project.imageAlt } />
+          <Stack $width='10rem' $alignMobile='center'>
+            <Heading as='h2' $size='m'>
+              { project.title }
+            </Heading>
+            <Paragraph $width='30rem'>
+              { project.description } <InternalLink to={`${project.link}`}>Read more <ScreenReaderOnly>about { project.title }</ScreenReaderOnly></InternalLink>
+            </Paragraph>
+            <TagList aria-label={`${project.title} tags:`} tags={project.tags} />
+          </Stack>
+        </Cluster>))
+      : <Paragraph aria-hidden='true'>{ foundProjectsMessage }</Paragraph>}
   </Stack>
   )
 }

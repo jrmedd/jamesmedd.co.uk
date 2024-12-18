@@ -5,7 +5,6 @@ import { Wiggle } from "../components/Wiggle"
 import { ExternalLink, Heading, Paragraph, UnorderedList } from "../components/Typography"
 import Markdown from "react-markdown"
 import rehypeRaw from "rehype-raw"
-import { useEffect } from "react"
 import { Lightbox } from "../components/LightBox"
 
 const A = props => <ExternalLink href={props.href}>{props.children}</ExternalLink>
@@ -16,9 +15,6 @@ const Div = props => <Paragraph as={Array.from(props.children).some(child => typ
 
 export const Component = () => {
   const project = useLoaderData()
-  useEffect(() => {
-    document.title = `${project.metadata.title} – ${document.title}`
-  }, [])
   return (
   <>
   <Heading $size='l'>
