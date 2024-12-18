@@ -1,4 +1,4 @@
-import { Link, Outlet, ScrollRestoration, useLoaderData, useLocation, useMatches } from 'react-router'
+import { Link, Outlet, ScrollRestoration, useLocation, useMatches } from 'react-router'
 import styled, { css, ThemeProvider } from 'styled-components'
 import { GlobalStyle, theme } from '../theme'
 import { Button } from '../components/Button'
