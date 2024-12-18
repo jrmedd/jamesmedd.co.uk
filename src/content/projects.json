@@ -65,6 +65,14 @@
       "tags": ["ux design", "service design", "frontend design", "public sector", "accessibility"]
     },
     {
+      "title": "DESNZ Internal briefing tool",
+      "description": "A tool created to to help prioritise information within the civil service, visualising internal and external communications, national statistics, social media, and more.",
+      "image": "briefing.jpg",
+      "imageAlt": "An example of user responses to a prototype during the design phase.",
+      "link": "briefing",
+      "tags": ["ux design", "user research", "frontend design", "public sector", "data visualisation"]
+    },
+    {
       "title": "iBinned.it",
       "description": "A rubbish idea for workshops based on generating datasets with mapping and still the only domain name I regret letting go of.",
       "image": "ibinnedit.jpg",
