@@ -6,7 +6,7 @@ Blue Prism leads the way in [Robotic Process Automation (RPA)](https://en.wikipe
 
 ## Driving change with a design system
 
-![An example of a UI component – a checkbox – as a shared, reusable Figma component, with multiple variants and themes](blueprism_3)
+![An example of a UI component – a checkbox – as a shared, reusable Figma component, with multiple variants and themes](blueprism_3.jpg)
 
 Transitioning from Windows-only desktop software to the web called for a modern, lightweight, accessible design system. Here's how we made it happen:
 
@@ -15,7 +15,7 @@ Transitioning from Windows-only desktop software to the web called for a modern,
 - **Documenting for clarity**: Every component’s use cases and applications were documented for easy adoption by all team members.
 - **Pioneering accessibility**: Leveraging my experience in accessible design, I provided detailed examples of ARIA attributes and interactive behaviour for developers.
 
-![An example of a new component – a combobox – with suggested ARIA attributes and keyboard control behaviour prepared for UI developers](blueprism_4)
+![An example of a new component – a combobox – with suggested ARIA attributes and keyboard control behaviour prepared for UI developers](blueprism_4.jpg)
 
 ---
 
@@ -34,26 +34,26 @@ To support Blue Prism’s first web-enabled release, we took a user-centred appr
 
 ### Revamping complex scheduling
 
-![An example the existing scheduler user interface which, while capable, was not optimised for the complex process branching our customers demanded of it.](blueprism_5)
+![An example the existing scheduler user interface which, while capable, was not optimised for the complex process branching our customers demanded of it.](blueprism_5.jpg)
 
 We found that high-performing customers were using the scheduler for more than just scheduling. They modularised processes into logical groups—authentication, queue-loading, fault-reporting, and more. The existing UI wasn’t designed for this complexity, forcing users into workarounds like external documentation and custom software.
 
 Our proposed redesign mirrored their logic, allowing users to "drop-in" at any point, execute tasks, and reconfigure steps quickly.
 
-![The first draft of a scheduler interface, built using elements of our design system, to better reflect the logic applied by our customers.](blueprism_6)
+![The first draft of a scheduler interface, built using elements of our design system, to better reflect the logic applied by our customers.](blueprism_6.jpg)
 
 ---
 
 ### Proposing components
 
-![An explainer of datepicker use cases in the context of our software, based on research.](blueprism_2)
+![An explainer of datepicker use cases in the context of our software, based on research.](blueprism_2.jpg)
 
 Each design system component started with a real use-case, like a datepicker or combobox. Figma was a game-changer for collaboration:
 
 - Developers could inspect design elements directly, consuming colours, typography, and more without needing specifics.
 - Behavioural details were documented with slides, and rich prototypes in tools like Framer brought interactions to life.
 
-![Extended examples of how a datepicker might function in other locales.](blueprism_1)
+![Extended examples of how a datepicker might function in other locales.](blueprism_1.jpg)
 
 <video src="/blueprism.webm"></video>
 

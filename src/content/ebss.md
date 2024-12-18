@@ -6,13 +6,13 @@ As a **product designer, service designer, and accessibility specialist**, I had
 
 The project was designed to reach people without domestic energy contracts, such as residents in park homes, care homes, canal boats, and other living arrangements. These individuals were excluded from the standard mechanisms for energy discounts, such as monthly bill reductions or the gas price cap. Recognising the additional challenges faced by off-grid residents, we also developed an alternative fuel payment service.
 
-![A screenshot of one of our pages. Ensuring that applicants who might not have access to an email address was a key part of our approach to fairness and inclusivity](ebss_1)
+![A screenshot of one of our pages. Ensuring that applicants who might not have access to an email address was a key part of our approach to fairness and inclusivity](ebss_1.png)
 
 ## Rapid design and iteration under tight constraints
 
 Delivering this critical service required an accelerated pace, first seen in similar approaches during COVID-19. Rapid policy changes meant our designs had to evolve quickly while adhering to strict constraints. Our primary goal was to maximise the number of eligible applicants while minimising potential for overpayments and safeguarding the service against fraud.
 
-![A screenshot of our GitHub issues board](ebss_2)
+![A screenshot of our GitHub issues board](ebss_2.png)
 
 To meet these demands, I leveraged the **GOV.UK Prototype Kit**, which enabled seamless collaboration between myself and the content designer, which allowed us to produce near-production-ready frontend code. This setup facilitated quick user testing across diverse devices and demographics. During a two-week cycle of around 50 usability tests, at least 30% of participants accessed the service via mobile devices, with many others using tablets instead of traditional desktop PCs.
 
