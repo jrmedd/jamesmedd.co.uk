@@ -38,7 +38,7 @@
       "image": "arcade.jpg",
       "imageAlt": "Two people laughing playing The Mashing arcade cabinet; their hands are a blur of motion.",
       "link": "arcade",
-      "tags": ["art", "full-stack development", "event production", "physical product design", "electronics"]
+      "tags": ["art", "game design", "event production", "physical product design", "electronics"]
     },
     {
       "title": "DVSA Commercial Vehicle Service",
@@ -79,6 +79,14 @@
       "imageAlt": "A heatmap of litter logged in one afternoon of tracking by Manchester students",
       "link": "ibinnedit",
       "tags": ["ux design", "workshops", "full-stack development", "art", "data visualisation"]
+    },
+    {
+      "title": "Graft Games",
+      "description": "Graft Games is an informal games studio, making games that combine classic gaming mechanics and with craft equipment, creating unique experiences that blur the boundaries between playfullness and productiveness.",
+      "image": "graft_4.jpg",
+      "imageAlt": "The Graft Games logo",
+      "link": "graft",
+      "tags": ["game design", "physical product development", "art", "electronics"]
     }
   ]
 }
