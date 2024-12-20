@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components"
 import { Wiggle } from "./Wiggle"
+import { ExternalLink } from "./Typography"
 
 const StyledFooter = styled.footer(props => css`
   width: 100%;
@@ -14,7 +15,7 @@ export const Footer = props => (
   <>
   <Wiggle />
   <StyledFooter>
-    This site was built by me in 2024.
+    <ExternalLink href='https://github.com/jrmedd/jamesmedd.co.uk'>This site was built by me in 2024</ExternalLink>
   </StyledFooter>
   </>
 )
