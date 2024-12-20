@@ -87,6 +87,14 @@
       "imageAlt": "The Graft Games logo",
       "link": "graft",
       "tags": ["game design", "physical product design", "art", "electronics"]
+    },
+    {
+      "title": "Sonic Pixels",
+      "description": "An interactive, spatial sound installation that allows people to paint with sound.",
+      "image": "pixels_2.png",
+      "imageAlt": "The illuminated Sonic Pixels units illuminated in Talbot Mill",
+      "link": "pixels",
+      "tags": ["art", "physical product design", "electronics", "full-stack development"]
     }
   ]
 }
