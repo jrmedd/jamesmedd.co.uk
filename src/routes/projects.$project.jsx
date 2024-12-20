@@ -13,7 +13,6 @@ const H3 = props => <Heading as='h3' $size='m'>{props.children}</Heading>
 const Div = props => <Paragraph as={Array.from(props.children).some(child => typeof child === 'string') ? 'p' : 'div'}>{props.children}</Paragraph>
 const UL = props => <UnorderedList>{props.children}</UnorderedList>
 
-
 export const Component = () => {
   const project = useLoaderData()
   return (

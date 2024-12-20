@@ -5,6 +5,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const chocolate = '#443938'
 const fondant = '#F6D9CF'
+const chocolateFondant = '#B4A29C'
 const cream = '#FFF9F4'
 
 const breakpoints = {
@@ -31,6 +32,7 @@ export const theme = {
       body: cream,
     },
     interactive: fondant,
+    interactiveShade: chocolateFondant,
     background: chocolate,
     breakpoints,
     wiggleParameters
