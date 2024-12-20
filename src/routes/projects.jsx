@@ -28,7 +28,7 @@ export const Component = props => {
     </Paragraph>
     <Wiggle />
     <TagList checked={selectedTags} interactive onChange={handleFilter} name='Project tags' tags={tags} />
-    <ScreenReaderOnly as='p' aria-live='polite' aria-atomic='true' aria-role='status'>{foundProjectsMessage}</ScreenReaderOnly>
+    <ScreenReaderOnly as='p' aria-live='polite' aria-atomic='true' role='status'>{foundProjectsMessage}</ScreenReaderOnly>
     {filteredProjects.length > 0 ? 
      filteredProjects.map((project, index) => (              
         <Cluster as='article' key={`project-${index}`} $gap='1.5rem' $align='center' $justify='center' $reverse={index & 1 === 1}>
