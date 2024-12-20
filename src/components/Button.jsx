@@ -31,7 +31,7 @@ const Button = styled(NavLink)(props => css`
     transform: scale(1.1);
   }
   &.active {
-    background-color: ${props => `${props.theme.interactive}a6`};
+    background-color: ${props => props.theme.interactiveShade};
     color: ${props => props.theme.background};
     transform: scale(0.9);
   }

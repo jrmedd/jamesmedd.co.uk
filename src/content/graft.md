@@ -7,7 +7,7 @@ My friend [Gemma Potter](https://gemmamaypotter.co.uk/) and I started [Graft Gam
 
 ## Our games
 
-<video src="/graft_1.mp4" caption="Hazuki in action"></video>
+<video src="/graft_1.webm" caption="Hazuki in action with players at FACT, Liverpool"></video>
 
 ### Hazuki
 
@@ -24,6 +24,8 @@ But we didn’t stop there. At the 2018 London Games Festival, we ran an experim
 ---
 
 ### Pocket Racer
+
+<video src="/graft_2.webm" data-has-audio='true' caption='People playing Pocket Racer'></video>
 
 Inspired by production and quality targets imposed upon garment factory workers, [Pocket Racer](https://graft.games/pocket-racer) is a racing game that uses a sewing machine for input. Rather than a needle and thread, the machines are loaded with pens! Players must race around a track based on a patch pocket shape. It's not only about speed though; racers will be disqualified if their stitching is inaccurate and they deviate from the track.
 
