@@ -22,6 +22,8 @@ _Collision_ was my response to that idea. I created an online tool where people 
 
 The browser-based pixel art tool used curated palettes from [Lospec.com](https://lospec.com), enabling participants to craft 16px x 16px flags, from simple to intricate designs. Once complete, flags could be "planted" in real-world locations using their device's location, and viewed in a virtual twin of Greater Manchester, built in Roblox. This transformed the city into a dynamic, user-generated art gallery that merged physical and digital landscapes.
 
+![Scenes from the project's virtual twin in Roblox, showcasing work created across the region](collision_3.jpg)
+
 ---
 
 ## Amplifying voices, building skills
