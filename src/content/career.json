@@ -43,7 +43,12 @@
     {
       "year": 2022,
       "event": "SPARCK / BJSS",
-      "description": "At SPARCK / BJSS, I leverage my broad experience as a digital design consultant, creating usable, accessible services through a combination of extensive service design, detailed interaction design, and empathetic research. I've also been responsible for coaching our leads in the North of England and ensuring our strategy makes SPARCK a great place to work."
+      "description": "At SPARCK / BJSS, I leveraged my broad experience as a digital design consultant, creating usable, accessible services through a combination of extensive service design, detailed interaction design, empathetic research, and creative technology. I was also responsible for coaching leads in the North of England and ensuring our strategy makes SPARCK a great place to work."
+    },
+    {
+      "year": 2025,
+      "event": "HE Inventions",
+      "description": "I design and engineer cutting-edge AR and computer vision systems at HE Inventions, making high-speed print and packaging smarter, simpler, and less wasteful."
     }
   ]
 }
