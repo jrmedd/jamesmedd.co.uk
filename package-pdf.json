@@ -1,0 +1,13 @@
+{
+  "name": "pdf-generator",
+  "version": "1.0.0",
+  "description": "Generate PDF from static career page",
+  "main": "generate-pdf.js",
+  "type": "module",
+  "scripts": {
+    "generate-pdf": "node generate-pdf.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}
