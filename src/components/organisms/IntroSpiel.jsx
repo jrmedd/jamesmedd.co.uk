@@ -11,7 +11,7 @@ export const IntroSpiel = props => (
         <TimeOfDayGreeting />
       </Heading>
       <Paragraph $width='28rem'>
-        I’m an artist, designer, technologist, musician, and more, based in Manchester, UK, currently working as a design consultant at SPARCK.
+        I’m an artist, designer, technologist, musician, and more, based in Manchester, UK, currently working as a design specialist at HE Inventions.
       </Paragraph>
       <Paragraph $width='28rem'>
         You’ll find an overview of my career to date here.
