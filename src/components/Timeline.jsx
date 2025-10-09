@@ -15,7 +15,7 @@ const ThenAndNow = styled.span(props => css`
     position: absolute;
     text-align: center;
     top: ${props => props.$then ? '-4.5rem' : 'unset'};
-    bottom: ${props => props.$now ? '4.5rem' : 'unset'}; 
+    bottom: ${props => props.$now ? '1rem' : 'unset'}; 
     left: 0;
     width: 100%;
   }
