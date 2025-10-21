@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 import { LinkedIn } from './socialIcons/LinkedIn'
 import { NPM } from './socialIcons/NPM'
 import { Instagram } from './socialIcons/Instagram'
+import { Itch } from './socialIcons/Itch'
 import { GitHub } from './socialIcons/GitHub'
 import { YouTube } from './socialIcons/YouTube'
 
@@ -31,6 +32,9 @@ export const Socials = props => (
     </SocialItem>
     <SocialItem>
       <Instagram />
+    </SocialItem>
+    <SocialItem>
+      <Itch />
     </SocialItem>
     <SocialItem>
       <GitHub />
